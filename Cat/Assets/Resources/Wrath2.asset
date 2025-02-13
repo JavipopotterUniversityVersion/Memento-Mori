@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27939074f0474c2419ef9e4e0de07290, type: 3}
+  m_Name: Wrath2
+  m_EditorClassIdentifier: 
+  _value: "Hace una noche preciosa---\nHay tantas estrellas---\n<opt:No hay ninguna
+    estrella/follow>---\nS\xED las hay pero no las vemos---\nEn realidad no, no las
+    hay pero s\xED las vemos---\nMuchas de las estrellas que ves murieron hace millones
+    de a\xF1os---\nPero estaban tan lejos que su luz a\xFAn nos llega---\nEs como
+    una imagen del pasado---\nUn recuerdo v\xEDvido de tiempos anteriores---\n<opt:\xBFNo
+    estabamos en el coche?/follow>---\n\xBFEh? Claro, pero acordamos que parar\xEDamos
+    aqu\xED---\nEn realidad tengo algo que decirte...<set:Drive=Denial>---\n<iload:CarDrive>\n"

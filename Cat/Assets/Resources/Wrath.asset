@@ -13,4 +13,11 @@ MonoBehaviour:
   m_Name: Wrath
   m_EditorClassIdentifier: 
   _value: "\xBFHola?---\n\xBFEst\xE1s bien?---\n\xBFEstabas disociando? jejeje---\n\xBFEn
-    qu\xE9 pensabas?---\n<opt:Nada en especial/follow>"
+    qu\xE9 pensabas?---\n<opt:Nada en especial/follow>---\n\xBFNo?---\nBueno...---\n<w:3>---\nOye,
+    a\xFAn no te he dado las gracias por acercarme a casa.---\nNo entiendo por qu\xE9
+    eres tan amable conmigo.---\nTe lo intentar\xE9 compensar.---\nLo siento por
+    ser una molestia.---\n...---\n<w:4>---\nA\xFAn nos queda un buen rato de viaje---\n\xBFTe
+    parece bien hacemos una parada para tomar el aire?---\n<opt:No/follow>---\n\xBFSeguro?<pitch:-1>---\nBueno,
+    lo que t\xFA digas<pitch:-1.5>---\nBueno, lo que t\xFA digas<pitch:-2>---\nBueno,
+    lo que t\xFA digas<pitch:-3>---\nBueno, lo que t\xFA digas<set:Parade=Wrath2>
+    <iload:CarStop>---"

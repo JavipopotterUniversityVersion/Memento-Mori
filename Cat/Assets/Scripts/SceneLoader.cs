@@ -7,6 +7,7 @@ public class SceneLoader : MonoBehaviour
 {
     [SerializeField] Image _fadeImage;
     public void LoadScene(string scene) => StartCoroutine(LoadSceneRoutine(scene));
+    public void LoadSceneInstantly(string scene) => SceneManager.LoadScene(scene);
 
     IEnumerator LoadSceneRoutine(string scene)
     {

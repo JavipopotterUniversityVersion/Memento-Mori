@@ -43,8 +43,8 @@ public class TreadmillManager : MonoBehaviour
             part.part.transform.position += Vector3.back * speed * Time.deltaTime;
 
             if(part.part.transform.localPosition.z < 0) {
-                part.part.transform.position = partsList[partsList.Count - 1].tail.position;
-                part.part.transform.localPosition.Set(part.part.transform.localPosition.x, _height, part.part.transform.localPosition.z);
+                Vector3 tailPos = partsList[partsList.Count - 1].tail.position;
+                part.part.transform.position = new Vector3(part.part.transform.position.x, part.part.transform.position.y, tailPos.z);
                 partsList.Remove(part);
                 partsList.Add(part);
             }

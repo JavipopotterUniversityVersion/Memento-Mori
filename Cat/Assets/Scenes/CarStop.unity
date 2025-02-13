@@ -451,6 +451,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &782218708 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5419875331686325934, guid: a8f3dc6837a43bd4f8172eabf46ec915, type: 3}
+  m_PrefabInstance: {fileID: 1100955217}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &983918270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -921,6 +926,10 @@ PrefabInstance:
       propertyPath: sr
       value: 
       objectReference: {fileID: 983918271}
+    - target: {fileID: 8956167500866025518, guid: 137a8dc8a5405b14c89024460eba6172, type: 3}
+      propertyPath: musicSource
+      value: 
+      objectReference: {fileID: 782218708}
     - target: {fileID: 8956167500866025518, guid: 137a8dc8a5405b14c89024460eba6172, type: 3}
       propertyPath: stringEventDictionary.Array.size
       value: 5

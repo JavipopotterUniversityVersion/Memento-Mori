@@ -133,10 +133,14 @@ public class DialogueInterpreter : MonoBehaviour
         {
             sceneLoader.LoadScene(arg);
         }
+        else if(value == "iload")
+        {
+            sceneLoader.LoadSceneInstantly(arg);
+        }
         else if(value == "set")
         {
-            string stringRef = arg.Split(":=")[0];
-            string newString = arg.Split(":=")[1];
+            string stringRef = arg.Split("=")[0];
+            string newString = arg.Split("=")[1];
             Resources.Load<StringContainer>(stringRef).SetValue(Resources.Load<String>(newString));
         }
     }
