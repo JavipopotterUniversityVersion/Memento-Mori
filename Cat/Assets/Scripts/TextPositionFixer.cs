@@ -19,12 +19,12 @@ public class TextPositionFixer : MonoBehaviour
 
         Vector2 newPos = screenPos * screenSize;
 
-        if(screenPos.x < margin.x || screenPos.x > margin.y)
+        if(screenPos.x < -margin.x || screenPos.x > margin.x)
         {
             newPos.Set(_text.rectTransform.localPosition.x, newPos.y);
         }
 
-        if(screenPos.y < margin.x || screenPos.y > margin.y)
+        if(screenPos.y < -margin.y || screenPos.y > margin.y)
         {
             newPos.Set(newPos.x, _text.rectTransform.localPosition.y);
         }

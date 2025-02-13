@@ -769,6 +769,10 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4896325370368830461, guid: a8f3dc6837a43bd4f8172eabf46ec915, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5419875331686325934, guid: a8f3dc6837a43bd4f8172eabf46ec915, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
