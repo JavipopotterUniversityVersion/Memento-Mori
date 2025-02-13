@@ -47,9 +47,16 @@ public class OptionManager : MonoBehaviour
 
             if(Input.GetMouseButtonDown(0)) 
             {
-                interpreter.StartDialogue(opt.dialogueName);
+                if(opt.dialogueName != "follow") interpreter.StartDialogue(opt.dialogueName);
+
+                interpreter.Continue();
                 foreach(var option in options) option.gameObject.SetActive(false);
             }
+        }
+        else if(lastOption != null)
+        {
+            lastOption.OnExit();
+            lastOption = null;
         }
     }
     void SetOptions(string inputOptions)

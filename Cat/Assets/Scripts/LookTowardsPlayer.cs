@@ -6,6 +6,7 @@ public class LookTowardsPlayer : MonoBehaviour
 {
     Transform player;
     [SerializeField] bool _invert = true;
+    [SerializeField] bool _xFollow = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,6 @@ public class LookTowardsPlayer : MonoBehaviour
         Vector3 direction = player.position - transform.position;
         if (_invert) direction *= -1;
         Quaternion rotation = Quaternion.LookRotation(direction);
-        transform.rotation = new Quaternion(0, rotation.y, 0, rotation.w);
+        transform.rotation = new Quaternion(_xFollow ? rotation.x : 0, rotation.y, _xFollow ? rotation.z : 0, rotation.w);
     }
 }

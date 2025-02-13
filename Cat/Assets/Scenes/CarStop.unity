@@ -464,7 +464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1024351901312287843, guid: e29517edaa1bcbb4593058d9bd8700e9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.59
+      value: -0.244
       objectReference: {fileID: 0}
     - target: {fileID: 1024351901312287843, guid: e29517edaa1bcbb4593058d9bd8700e9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -472,7 +472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1024351901312287843, guid: e29517edaa1bcbb4593058d9bd8700e9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.74
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 1024351901312287843, guid: e29517edaa1bcbb4593058d9bd8700e9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -608,7 +608,7 @@ PrefabInstance:
       objectReference: {fileID: 1449584717}
     - target: {fileID: 8591082937489350066, guid: e29517edaa1bcbb4593058d9bd8700e9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.365
+      value: 0.692
       objectReference: {fileID: 0}
     - target: {fileID: 8591082937489350066, guid: e29517edaa1bcbb4593058d9bd8700e9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -889,9 +889,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1252245930}
     - target: {fileID: 6468313820577045773, guid: 137a8dc8a5405b14c89024460eba6172, type: 3}
+      propertyPath: _onEnable.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6468313820577045773, guid: 137a8dc8a5405b14c89024460eba6172, type: 3}
+      propertyPath: _onEnable.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1449584717}
+    - target: {fileID: 6468313820577045773, guid: 137a8dc8a5405b14c89024460eba6172, type: 3}
+      propertyPath: _onEnable.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6468313820577045773, guid: 137a8dc8a5405b14c89024460eba6172, type: 3}
+      propertyPath: _onEnable.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueInterpreter, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6468313820577045773, guid: 137a8dc8a5405b14c89024460eba6172, type: 3}
       propertyPath: _onEnable.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 11400000, guid: 543dedbf8d1921a4a86cf3fd94810ca7, type: 2}
+      objectReference: {fileID: 11400000, guid: 136d23e0cd1741841af1c71169707e71, type: 2}
+    - target: {fileID: 6468313820577045773, guid: 137a8dc8a5405b14c89024460eba6172, type: 3}
+      propertyPath: _onEnable.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: StringContainer, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8210386692397262025, guid: 137a8dc8a5405b14c89024460eba6172, type: 3}
       propertyPath: m_Name
       value: ---DIALOGUE---

@@ -696,7 +696,11 @@ PrefabInstance:
     - target: {fileID: 6468313820577045773, guid: 137a8dc8a5405b14c89024460eba6172, type: 3}
       propertyPath: _onEnable.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 11400000, guid: 6efe62d49ed8f064b8966af387faa066, type: 2}
+      objectReference: {fileID: 11400000, guid: 735444bdbbab8b34ab1b65ba37852ecd, type: 2}
+    - target: {fileID: 6468313820577045773, guid: 137a8dc8a5405b14c89024460eba6172, type: 3}
+      propertyPath: _onEnable.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: StringContainer, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8210386692397262025, guid: 137a8dc8a5405b14c89024460eba6172, type: 3}
       propertyPath: m_Name
       value: ---DIALOGUE---

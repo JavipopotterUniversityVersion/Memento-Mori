@@ -34,8 +34,11 @@ public class DialogueInterpreter : MonoBehaviour
     Dictionary<string, UnityEvent> events = new Dictionary<string, UnityEvent>();
     UnityEvent<string> onSendOptions = new UnityEvent<string>();
     public UnityEvent<string> OnSendOptions => onSendOptions;
+    bool _stop;
 
     string dialogueCache;
+
+    public void Continue() => _stop = false;
     
     private void Awake() {
         sceneLoader = GetComponent<SceneLoader>();
@@ -53,6 +56,7 @@ public class DialogueInterpreter : MonoBehaviour
         }
     }
 
+    public void StartDialogue(StringContainer dialogue) => StartCoroutine(StartDialogueRoutine(dialogue.Value));
     public void StartDialogue(String dialogue) => StartCoroutine(StartDialogueRoutine(dialogue.Value));
     public void StartDialogue(string dialogue) => StartCoroutine(StartDialogueRoutine(Resources.Load<String>(dialogue).Value));
     IEnumerator StartDialogueRoutine(string dialogue)
@@ -81,6 +85,7 @@ public class DialogueInterpreter : MonoBehaviour
 
                 yield return new WaitForSeconds(timeBetweenChars);
             }
+            yield return new WaitWhile(() => _stop);
             yield return new WaitForSeconds(waitTime);
         }
 
@@ -117,6 +122,7 @@ public class DialogueInterpreter : MonoBehaviour
         else if(value == "opt")
         {
             onSendOptions.Invoke(arg);
+            _stop = true;
         }
         else if(value == "channel")
         {
@@ -126,6 +132,12 @@ public class DialogueInterpreter : MonoBehaviour
         else if(value == "load")
         {
             sceneLoader.LoadScene(arg);
+        }
+        else if(value == "set")
+        {
+            string stringRef = arg.Split(":=")[0];
+            string newString = arg.Split(":=")[1];
+            Resources.Load<StringContainer>(stringRef).SetValue(Resources.Load<String>(newString));
         }
     }
 }
