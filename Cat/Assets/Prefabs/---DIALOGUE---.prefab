@@ -704,7 +704,7 @@ MonoBehaviour:
   _channels:
   - {fileID: 3342217732020869930}
   - {fileID: 8502975998237674420}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.035
   timeBetweenLines: 1
   _onCharWritten:
     m_PersistentCalls:
@@ -729,6 +729,10 @@ MonoBehaviour:
   - {fileID: -1329451671, guid: 88b558a2e35865949884f340b144ffb2, type: 3}
   volume: {fileID: 0}
   audioHandler: {fileID: 11400000, guid: 1029719db1797ac43a9e71cd54b4c821, type: 2}
+  materials:
+    list:
+    - Key: pixel
+      Value: {fileID: 2100000, guid: 9b367f66aef29654bbf028510aed1c50, type: 2}
   stringEventDictionary:
   - key: load2
     value:
@@ -784,8 +788,20 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 11400000, guid: 1029719db1797ac43a9e71cd54b4c821, type: 2}
           m_TargetAssemblyTypeName: SimpleAudioManagerHandler, Assembly-CSharp
-          m_MethodName: Stop
-          m_Mode: 4
+          m_MethodName: Pause
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: CarStop
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 4571377614891953233}
+          m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+          m_MethodName: Silence
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -794,10 +810,14 @@ MonoBehaviour:
             m_StringArgument: CarStop
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 4571377614891953233}
-          m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-          m_MethodName: Silence
-          m_Mode: 1
+  - key: unSilence
+    value:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 1029719db1797ac43a9e71cd54b4c821, type: 2}
+          m_TargetAssemblyTypeName: SimpleAudioManagerHandler, Assembly-CSharp
+          m_MethodName: Pause
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

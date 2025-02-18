@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bde49c8c4ac08ba4296bf35bcfc755cc, type: 3}
   m_Name: Parade
   m_EditorClassIdentifier: 
-  _value: {fileID: 11400000, guid: 2431fa5ce95d6ef4f90ff741a01f1952, type: 2}
+  _value: {fileID: 11400000, guid: 543dedbf8d1921a4a86cf3fd94810ca7, type: 2}

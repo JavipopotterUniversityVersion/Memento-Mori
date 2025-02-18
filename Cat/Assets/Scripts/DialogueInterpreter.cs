@@ -31,6 +31,7 @@ public class DialogueInterpreter : MonoBehaviour
     SceneLoader sceneLoader;
 
     [SerializeField] SimpleAudioManagerHandler audioHandler;
+    [SerializeField] SerializableDictionary<string, Material> materials;
 
     [SerializeField] StringEventPair[] stringEventDictionary;
     Dictionary<string, UnityEvent> events = new Dictionary<string, UnityEvent>();
@@ -130,8 +131,8 @@ public class DialogueInterpreter : MonoBehaviour
             string[] subArgs = arg.Split("/");
             if(subArgs.Length > 1)
             {
-                if(arg.Split("/").Length > 2)sceneLoader.LoadScene(arg.Split("/")[0], arg.Split("/")[1] == "white", () => ReadCommand(arg.Split("/")[2]));
-                else sceneLoader.LoadScene(arg.Split("/")[0], arg.Split("/")[1] == "white");
+                if(subArgs.Length > 2)sceneLoader.LoadScene(subArgs[0], subArgs[1] == "white", () => ReadCommand(subArgs[2]));
+                else sceneLoader.LoadScene(subArgs[0], subArgs[1] == "white");
             }
             else sceneLoader.LoadScene(arg);
         }
@@ -160,6 +161,12 @@ public class DialogueInterpreter : MonoBehaviour
         else if(value == "stopOnLoad")
         {
             sceneLoader.StopAudioOnLoad(arg == "true");
+        }
+        else if(value == "charTime") timeBetweenChars = float.Parse(arg);
+        else if(value == "setMat")
+        {
+            string[] subArgs = arg.Split("/");
+            materials[subArgs[0]].SetFloat(subArgs[1], float.Parse(subArgs[2]));
         }
     }
 }
