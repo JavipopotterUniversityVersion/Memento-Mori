@@ -205,6 +205,7 @@ namespace SimpleAudioManager
             _handler.OnSetPitch.AddListener(SetPitch);
             _handler.OnPlaySong.AddListener(PlaySong);
             _handler.OnStop.AddListener(StopSong);
+            _handler.OnPause.AddListener(b => { if (b) _currentSource.Pause(); else _currentSource.UnPause(); });
         }
 
         /// <summary>

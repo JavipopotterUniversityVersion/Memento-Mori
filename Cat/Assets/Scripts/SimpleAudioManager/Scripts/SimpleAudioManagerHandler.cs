@@ -14,8 +14,13 @@ public class SimpleAudioManagerHandler : ScriptableObject
     private UnityEvent<float> _onStop = new UnityEvent<float>();
     public UnityEvent<float> OnStop => _onStop;
 
+    private UnityEvent<bool> _onPause = new UnityEvent<bool>();
+    public UnityEvent<bool> OnPause => _onPause;
+
     public void PlaySong(Song psong) => _onPlaySong.Invoke(psong);
     public void Stop(float fadeOutDuration) => _onStop.Invoke(fadeOutDuration);
+
+    public void Pause(bool pause) => _onPause.Invoke(pause);
 
     public UnityEvent<float> _onSetPitch = new UnityEvent<float>();
     public UnityEvent<float> OnSetPitch => _onSetPitch;

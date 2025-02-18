@@ -26,16 +26,16 @@ public class SceneLoader : MonoBehaviour
 
     IEnumerator LoadSceneRoutine(string scene, UnityAction action = null)
     {
-        for(float i = 0; i < 1; i += Time.deltaTime)
+        for(float i = 0; i < 1; i += 0.01f)
         {
             _fadeImage.color = new Color(_fadeImage.color.r, _fadeImage.color.g, _fadeImage.color.b, i);
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSecondsRealtime(0.01f);
         }
         _fadeImage.color = new Color(_fadeImage.color.r, _fadeImage.color.g, _fadeImage.color.b, 1);
-        yield return new WaitForSeconds(1.0f);
+        if(_stopAudioOnLoad) AudioPerformer.Instance.StopAll();
+        yield return new WaitForSecondsRealtime(1.0f);
         action?.Invoke();
 
-        if(_stopAudioOnLoad) AudioPerformer.Instance.StopAll();
         SceneManager.LoadScene(scene);
     }
 
