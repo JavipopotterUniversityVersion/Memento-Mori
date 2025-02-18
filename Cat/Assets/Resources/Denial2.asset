@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Denial2
   m_EditorClassIdentifier: 
   _value: "<channel:1>---\nHace fr\xEDo, sientes la suave brisa del viento---\n<channel:0>---\nNo
-    se ve ni una estrella hoy---\nUna pena, ser\xEDa muy rom\xE1ntico...---\n<opt:\xBFRom\xE1ntico?/follow>\nUh...---\nNo
-    he dicho nada, olv\xEDdalo---\nEn realidad, quer\xEDa parar aqu\xED por otro
-    motivo...---\nNo es que quisiese mentirte, de verdad---\nSimplemente me daba
-    verg\xFCenza---\nHay algo que tengo que decirte...---\n...---\n<w:3>---\nCierra
+    se ve ni una estrella hoy---\n<c:2>Una pena, ser\xEDa muy rom\xE1ntico...---\n<opt:\xBFRom\xE1ntico?/follow>\nUh...---\n<c:3>No
+    he dicho nada, olv\xEDdalo---\n<c:0>En realidad, quer\xEDa parar aqu\xED por
+    otro motivo...---\nNo es que quisiese mentirte, de verdad---\n<c:1>Simplemente
+    me daba verg\xFCenza---\nHay algo que tengo que decirte...---\n...---\n<w:3>---\nCierra
     los ojos, y no los abras por favor...---\n<event:close_eyes> <channel:1>---\nSientes
     como te entrega una carta en la mano<event:takePosition>---\n<channel:0>---\nLo
     siento...<event:open_eyes> <pitch:-1>---\nTe ment\xED...<w:2>---\nGracias por
-    todo, de verdad---\nAdi\xF3s<w:2>---\n<event:mori>---\n<w:3>---\n<set:Drive=Wrath>
-    <load:carDrive>"
+    todo, de verdad---\nAdi\xF3s<w:2>---\n<event:mori>---\n<w:3> <play:noise>---\n<set:Drive=Wrath>
+    <load:carDrive/white/stop:noise>"

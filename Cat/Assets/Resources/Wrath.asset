@@ -20,4 +20,4 @@ MonoBehaviour:
     parece bien hacemos una parada para tomar el aire?---\n<opt:No/follow>---\n\xBFSeguro?<pitch:-1>---\nBueno,
     lo que t\xFA digas<pitch:-1.5>---\nBueno, lo que t\xFA digas<pitch:-2>---\nBueno,
     lo que t\xFA digas<pitch:-3>---\nBueno, lo que t\xFA digas<set:Parade=Wrath2>
-    <iload:CarStop>---"
+    <pitch:1> <iload:CarStop>---"

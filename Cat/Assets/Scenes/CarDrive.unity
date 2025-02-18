@@ -387,11 +387,77 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &831223989 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 3504248961637285432, guid: a8f3dc6837a43bd4f8172eabf46ec915, type: 3}
-  m_PrefabInstance: {fileID: 847036161904345829}
+--- !u!1 &692830043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 692830044}
+  - component: {fileID: 692830045}
+  m_Layer: 0
+  m_Name: PlayMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &692830044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692830043}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 360.44986, y: 358.22684, z: 126.66369}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &692830045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692830043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9775542f3111457439d54ed47affddf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onEnable:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 1029719db1797ac43a9e71cd54b4c821, type: 2}
+        m_TargetAssemblyTypeName: SimpleAudioManagerHandler, Assembly-CSharp
+        m_MethodName: PlaySong
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: dd8533bd8431d4b4d9221dd25be6cc59, type: 2}
+          m_ObjectArgumentAssemblyTypeName: SimpleAudioManager.Song, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 2bdefc992be5c8544bd85acbf57e9032, type: 2}
+        m_TargetAssemblyTypeName: AudioPlayer, Assembly-CSharp
+        m_MethodName: PlayMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,11 +555,6 @@ MonoBehaviour:
   parts: 15
   _height: -16
   speed: 25
---- !u!82 &1279712966 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 2153274613908863054, guid: a8f3dc6837a43bd4f8172eabf46ec915, type: 3}
-  m_PrefabInstance: {fileID: 847036161904345829}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1370969317
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,11 +834,7 @@ PrefabInstance:
     - target: {fileID: 8956167500866025518, guid: 137a8dc8a5405b14c89024460eba6172, type: 3}
       propertyPath: musicSource
       value: 
-      objectReference: {fileID: 831223989}
-    - target: {fileID: 8956167500866025518, guid: 137a8dc8a5405b14c89024460eba6172, type: 3}
-      propertyPath: _onCharWritten.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1279712966}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -989,3 +1046,4 @@ SceneRoots:
   - {fileID: 847036161904345829}
   - {fileID: 101329988}
   - {fileID: 1559668129}
+  - {fileID: 692830044}

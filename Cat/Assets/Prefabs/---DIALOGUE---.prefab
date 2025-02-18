@@ -709,13 +709,13 @@ MonoBehaviour:
   _onCharWritten:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: PlayOneShot
-        m_Mode: 2
+      - m_Target: {fileID: 11400000, guid: ed87dfb76d14c9346bd79ecce89b8ad2, type: 2}
+        m_TargetAssemblyTypeName: AudioPlayer, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: a395d0d077a31a644954f07b7e27d2e6, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -723,9 +723,12 @@ MonoBehaviour:
         m_CallState: 2
   sr: {fileID: 0}
   sprites:
-  - {fileID: -847933396, guid: 47b000707c3fb5549b7b4f095a87d429, type: 3}
-  - {fileID: 2129956444, guid: 47b000707c3fb5549b7b4f095a87d429, type: 3}
-  musicSource: {fileID: 0}
+  - {fileID: -1939299693, guid: 88b558a2e35865949884f340b144ffb2, type: 3}
+  - {fileID: -1985562382, guid: 88b558a2e35865949884f340b144ffb2, type: 3}
+  - {fileID: 385855885, guid: 88b558a2e35865949884f340b144ffb2, type: 3}
+  - {fileID: -1329451671, guid: 88b558a2e35865949884f340b144ffb2, type: 3}
+  volume: {fileID: 0}
+  audioHandler: {fileID: 11400000, guid: 1029719db1797ac43a9e71cd54b4c821, type: 2}
   stringEventDictionary:
   - key: load2
     value:

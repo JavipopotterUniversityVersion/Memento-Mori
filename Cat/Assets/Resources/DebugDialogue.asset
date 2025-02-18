@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27939074f0474c2419ef9e4e0de07290, type: 3}
   m_Name: DebugDialogue
   m_EditorClassIdentifier: 
-  _value: "Todo esto suena un poco deprimente \xBFverdad?---\n<opt:Si/follow,No/follow>---\naaa---\nfunciona---\n<opt:Si/Denial>"
+  _value: "Todo esto suena un poco deprimente \xBFverdad?---\n<opt:Si/follow,No/follow>---\naaa---\nfunciona---\n<play:noise>
+    <load:carStop/white/stop:noise>---\n"

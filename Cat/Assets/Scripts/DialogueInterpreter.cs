@@ -5,7 +5,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.UI;
+using UnityEngine.Rendering;
 
 [Serializable]
 public struct StringEventPair
@@ -27,8 +27,10 @@ public class DialogueInterpreter : MonoBehaviour
     [SerializeField] UnityEvent _onCharWritten;
     [SerializeField] SpriteRenderer sr;
     [SerializeField] Sprite[] sprites;
-    [SerializeField] AudioSource musicSource;
+    [SerializeField] Volume volume;
     SceneLoader sceneLoader;
+
+    [SerializeField] SimpleAudioManagerHandler audioHandler;
 
     [SerializeField] StringEventPair[] stringEventDictionary;
     Dictionary<string, UnityEvent> events = new Dictionary<string, UnityEvent>();
@@ -93,10 +95,16 @@ public class DialogueInterpreter : MonoBehaviour
         _lineRenderer.enabled = false;
     }
 
+    public void ReadCommand(string command)
+    {
+        float refTime = timeBetweenLines;
+        ReadCommand(command, ref refTime);
+    }
+
     public void ReadCommand(string command, ref float waitTime)
     {
-        string value = command.Split(":")[0];
-        string arg = command.Split(":")[1];
+        string value = command.Split(":", 2)[0];
+        string arg = command.Split(":", 2)[1];
 
         if(value == "c")
         {
@@ -104,7 +112,7 @@ public class DialogueInterpreter : MonoBehaviour
         }
         else if(value == "pitch")
         {
-            musicSource.pitch = float.Parse(arg);
+            audioHandler.OnSetPitch.Invoke(float.Parse(arg));
         }
         else if(value == "event")
         {
@@ -131,7 +139,15 @@ public class DialogueInterpreter : MonoBehaviour
         }
         else if(value == "load")
         {
-            sceneLoader.LoadScene(arg);
+            if(arg.Split("/").Length > 1)
+            {
+                if(arg.Split("/").Length > 2) 
+                {
+                    sceneLoader.LoadScene(arg.Split("/")[0], arg.Split("/")[1] == "white", () => ReadCommand(arg.Split("/")[2]));
+                }
+                else sceneLoader.LoadScene(arg.Split("/")[0], arg.Split("/")[1] == "white");
+            }
+            else sceneLoader.LoadScene(arg);
         }
         else if(value == "iload")
         {
@@ -142,6 +158,25 @@ public class DialogueInterpreter : MonoBehaviour
             string stringRef = arg.Split("=")[0];
             string newString = arg.Split("=")[1];
             Resources.Load<StringContainer>(stringRef).SetValue(Resources.Load<String>(newString));
+        }
+        else if(value == "play")
+        {
+            AudioPlayer audio = Resources.Load<AudioPlayer>("SoundPlayers/" + arg);
+            
+            bool oneShot = true;
+            if(arg.Split("/").Length > 1) oneShot = int.Parse(arg.Split("/")[1]) == 1;
+
+            if(oneShot) audio.Play();
+            else audio.PlayMusic();
+        }
+        else if(value == "stop")
+        {
+            AudioPlayer audio = Resources.Load<AudioPlayer>("SoundPlayers/" + arg);
+            audio.Stop();
+        }
+        else if(value == "stopOnLoad")
+        {
+            sceneLoader.StopAudioOnLoad(arg == "true");
         }
     }
 }
