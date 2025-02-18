@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27939074f0474c2419ef9e4e0de07290, type: 3}
   m_Name: Wrath3
   m_EditorClassIdentifier: 
-  _value: "<c:1>\xBFTe culpas a ti mismo por cosas fuera de tu control?---\nOye,
+  _value: "<c:1>\xBFTe culpas a ti mismo por cosas fuera de tu control?---\n...---\nOye,
     no me estabas escuchando---\n\xBFEst\xE1s bien?---\n\xBFSeguro que no quieres
     parar? <opt:Est\xE1bamos fuera/follow>---\n\xBFQu\xE9? No hemos parado en nig\xFAn
-    momento---\n<c:3>Est\xE1s perdiendo la cabeza igual que yo jejejsj---\n<opt:Igual
-    que t\xFA/follow>---\nEs broma idiota---\n"
+    momento---\n<c:3> <event:silence>Est\xE1s perdiendo la cabeza igual que yo jejejsj---\n<opt:\xBFIgual
+    que t\xFA?/follow>---\nEs broma idiota---\n"

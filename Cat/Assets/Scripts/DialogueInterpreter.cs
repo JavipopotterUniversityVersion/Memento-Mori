@@ -106,22 +106,10 @@ public class DialogueInterpreter : MonoBehaviour
         string value = command.Split(":", 2)[0];
         string arg = command.Split(":", 2)[1];
 
-        if(value == "c")
-        {
-            sr.sprite = sprites[int.Parse(arg)];
-        }
-        else if(value == "pitch")
-        {
-            audioHandler.OnSetPitch.Invoke(float.Parse(arg));
-        }
-        else if(value == "event")
-        {
-            events[arg].Invoke();
-        }
-        else if(value == "w")
-        {
-            waitTime = float.Parse(arg);
-        }
+        if(value == "c") sr.sprite = sprites[int.Parse(arg)];
+        else if(value == "pitch") audioHandler.OnSetPitch.Invoke(float.Parse(arg));
+        else if(value == "event") events[arg].Invoke();
+        else if(value == "w") waitTime = float.Parse(arg);
         else if(value == "dialogue")
         {
             StopAllCoroutines();
@@ -139,20 +127,15 @@ public class DialogueInterpreter : MonoBehaviour
         }
         else if(value == "load")
         {
-            if(arg.Split("/").Length > 1)
+            string[] subArgs = arg.Split("/");
+            if(subArgs.Length > 1)
             {
-                if(arg.Split("/").Length > 2) 
-                {
-                    sceneLoader.LoadScene(arg.Split("/")[0], arg.Split("/")[1] == "white", () => ReadCommand(arg.Split("/")[2]));
-                }
+                if(arg.Split("/").Length > 2)sceneLoader.LoadScene(arg.Split("/")[0], arg.Split("/")[1] == "white", () => ReadCommand(arg.Split("/")[2]));
                 else sceneLoader.LoadScene(arg.Split("/")[0], arg.Split("/")[1] == "white");
             }
             else sceneLoader.LoadScene(arg);
         }
-        else if(value == "iload")
-        {
-            sceneLoader.LoadSceneInstantly(arg);
-        }
+        else if(value == "iload") sceneLoader.LoadSceneInstantly(arg);
         else if(value == "set")
         {
             string stringRef = arg.Split("=")[0];

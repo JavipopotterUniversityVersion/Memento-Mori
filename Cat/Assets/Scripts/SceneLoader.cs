@@ -50,6 +50,8 @@ public class SceneLoader : MonoBehaviour
     }
 
     public void Fade() => StartCoroutine(FadeRoutine());
+    public void Silence() => AudioPerformer.Instance.StopAll();
+    
     IEnumerator FadeRoutine()
     {
         for(float i = 0; i < 1; i += Time.deltaTime)

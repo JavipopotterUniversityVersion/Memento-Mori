@@ -67,7 +67,7 @@ public class OptionManager : MonoBehaviour
 
         for(int i = 0; i < opts.Length; i++)
         {
-            options[i].SetOption(opts[i].Split("/")[0], opts[i].Split("/")[1]);
+            options[i].SetOption(opts[i].Split("/")[0], opts[i].Split("/", 2)[1]);
             Vector3 targetPos = ((transform.forward * math.cos((angle * i) + MathF.PI/2) + math.sin((angle * i) + MathF.PI/2) * transform.up) * optionsDistance) + center.localPosition;
             StartCoroutine(SetOptionAnimation(options[i].transform, targetPos));
         }

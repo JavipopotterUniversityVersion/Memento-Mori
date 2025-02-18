@@ -778,6 +778,34 @@ MonoBehaviour:
             m_StringArgument: CarStop
             m_BoolArgument: 0
           m_CallState: 2
+  - key: silence
+    value:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 1029719db1797ac43a9e71cd54b4c821, type: 2}
+          m_TargetAssemblyTypeName: SimpleAudioManagerHandler, Assembly-CSharp
+          m_MethodName: Stop
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: CarStop
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 4571377614891953233}
+          m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+          m_MethodName: Silence
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: CarStop
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &6405229001191708630
 MonoBehaviour:
   m_ObjectHideFlags: 0
