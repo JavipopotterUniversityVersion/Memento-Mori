@@ -32,6 +32,7 @@ public class DialogueInterpreter : MonoBehaviour
 
     [SerializeField] SimpleAudioManagerHandler audioHandler;
     [SerializeField] SerializableDictionary<string, Material> materials;
+    [SerializeField] SerializableDictionary<string, Color> colors;
 
     [SerializeField] StringEventPair[] stringEventDictionary;
     Dictionary<string, UnityEvent> events = new Dictionary<string, UnityEvent>();
@@ -40,15 +41,15 @@ public class DialogueInterpreter : MonoBehaviour
     bool _stop;
 
     string dialogueCache;
+    [SerializeField] String[] dialogues;
+    Dictionary<string, String> dialogueDictionary = new Dictionary<string, String>();
 
     public void Continue() => _stop = false;
     
     private void Awake() {
         sceneLoader = GetComponent<SceneLoader>();
-        foreach(var value in stringEventDictionary)
-        {
-            events.Add(value.key, value.value);
-        }
+        foreach(var value in stringEventDictionary) events.Add(value.key, value.value);
+        foreach(var dialogue in dialogues) dialogueDictionary.Add(dialogue.name, dialogue);
     }
 
     private void Update() {
@@ -61,7 +62,7 @@ public class DialogueInterpreter : MonoBehaviour
 
     public void StartDialogue(StringContainer dialogue) => StartCoroutine(StartDialogueRoutine(dialogue.Value));
     public void StartDialogue(String dialogue) => StartCoroutine(StartDialogueRoutine(dialogue.Value));
-    public void StartDialogue(string dialogue) => StartCoroutine(StartDialogueRoutine(Resources.Load<String>(dialogue).Value));
+    public void StartDialogue(string dialogue) => StartCoroutine(StartDialogueRoutine(dialogueDictionary[dialogue].Value));
     IEnumerator StartDialogueRoutine(string dialogue)
     {
         channelIndex = 0;
@@ -83,13 +84,16 @@ public class DialogueInterpreter : MonoBehaviour
                 {
                     string value = _text.text.Split("<")[1].Split(">")[0];
                     _text.text = _text.text.Replace("<" + value + ">", "");
+                    i--;
                     ReadCommand(value, ref waitTime);
-                } else if(_text.text[i] != ' ') _onCharWritten.Invoke();
+                } else if(_text.text[i] != ' ' && !Input.GetKey(KeyCode.Tab)) _onCharWritten.Invoke();
 
-                yield return new WaitForSeconds(timeBetweenChars);
+                if(Input.GetKey(KeyCode.Tab)) yield return null;
+                else yield return new WaitForSeconds(timeBetweenChars);
             }
             yield return new WaitWhile(() => _stop);
-            yield return new WaitForSeconds(waitTime);
+            if(Input.GetKey(KeyCode.Tab)) yield return null;
+            else yield return new WaitForSeconds(waitTime);
         }
 
          _text.maxVisibleCharacters = 0;
@@ -104,8 +108,8 @@ public class DialogueInterpreter : MonoBehaviour
 
     public void ReadCommand(string command, ref float waitTime)
     {
-        string value = command.Split(":", 2)[0];
-        string arg = command.Split(":", 2)[1];
+        string value = command.Split(":", 2)[0].Trim();
+        string arg = command.Split(":", 2)[1].Trim();
 
         if(value == "c") sr.sprite = sprites[int.Parse(arg)];
         else if(value == "pitch") audioHandler.OnSetPitch.Invoke(float.Parse(arg));
@@ -140,8 +144,8 @@ public class DialogueInterpreter : MonoBehaviour
         else if(value == "set")
         {
             string stringRef = arg.Split("=")[0];
-            string newString = arg.Split("=")[1];
-            Resources.Load<StringContainer>(stringRef).SetValue(Resources.Load<String>(newString));
+            string dialogueName = arg.Split("=")[1];
+            Resources.Load<StringContainer>(stringRef).SetValue(dialogueDictionary[dialogueName]);
         }
         else if(value == "play")
         {
@@ -167,6 +171,16 @@ public class DialogueInterpreter : MonoBehaviour
         {
             string[] subArgs = arg.Split("/");
             materials[subArgs[0]].SetFloat(subArgs[1], float.Parse(subArgs[2]));
+        }
+        else if(value == "setMatColor")
+        {
+            string[] subArgs = arg.Split("/");
+            materials[subArgs[0]].SetColor(subArgs[1], colors[subArgs[2]]);
+        }
+        else if(value == "setMatBool")
+        {
+            string[] subArgs = arg.Split("/");
+            materials[subArgs[0]].SetFloat(subArgs[1], subArgs[2] == "true" ? 1 : 0);
         }
     }
 }

@@ -61,7 +61,7 @@ MonoBehaviour:
   loopCurrentSong: 1
   playOnAwake: 0
   maxVolume: 1
-  defaultSongBlendDuration: 1
+  defaultSongBlendDuration: 0
   defaultIntensityBlendDuration: 1
   _handler: {fileID: 11400000, guid: 1029719db1797ac43a9e71cd54b4c821, type: 2}
   _onPlay:

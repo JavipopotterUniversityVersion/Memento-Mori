@@ -733,6 +733,16 @@ MonoBehaviour:
     list:
     - Key: pixel
       Value: {fileID: 2100000, guid: 9b367f66aef29654bbf028510aed1c50, type: 2}
+  colors:
+    list:
+    - Key: red
+      Value: {r: 0.7660377, g: 0.18888903, b: 0.18355994, a: 1}
+    - Key: blue
+      Value: {r: 0.42229262, g: 0.5831496, b: 0.86415094, a: 1}
+    - Key: yellow
+      Value: {r: 0.86415094, g: 0.77243483, b: 0.33750796, a: 1}
+    - Key: white
+      Value: {r: 1, g: 1, b: 1, a: 1}
   stringEventDictionary:
   - key: load2
     value:
@@ -826,6 +836,16 @@ MonoBehaviour:
             m_StringArgument: CarStop
             m_BoolArgument: 0
           m_CallState: 2
+  dialogues:
+  - {fileID: 11400000, guid: 6efe62d49ed8f064b8966af387faa066, type: 2}
+  - {fileID: 11400000, guid: 543dedbf8d1921a4a86cf3fd94810ca7, type: 2}
+  - {fileID: 11400000, guid: 4b131ffff129ebc49aaedd04505636bb, type: 2}
+  - {fileID: 11400000, guid: e82fb16ded8756043a8bbf944206fe64, type: 2}
+  - {fileID: 11400000, guid: 2431fa5ce95d6ef4f90ff741a01f1952, type: 2}
+  - {fileID: 11400000, guid: 8dc5fce2be3aa7649b849f0d3ec7c777, type: 2}
+  - {fileID: 11400000, guid: 5b7001ed525821e45b2849f1600c2783, type: 2}
+  - {fileID: 11400000, guid: dae2b637854c8414bb0c0306c349a992, type: 2}
+  - {fileID: 11400000, guid: 3c392dd7fbb49504ca49c9d02b66a28a, type: 2}
 --- !u!114 &6405229001191708630
 MonoBehaviour:
   m_ObjectHideFlags: 0

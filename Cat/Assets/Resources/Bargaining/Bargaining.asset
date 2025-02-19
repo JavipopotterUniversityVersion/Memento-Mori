@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27939074f0474c2419ef9e4e0de07290, type: 3}
+  m_Name: Bargaining
+  m_EditorClassIdentifier: 
+  _value: "<setMatColor:pixel/_Filter/yellow> <channel:1>---\nHace fr\xEDo, sientes
+    la suave brisa del viento---\n<channel:0>---\nHace fr\xEDo---\nSupongo que es
+    lo normal en Noviembre---\nMe siento mucho mejor ahora---\nGracias por parar,
+    realmente lo necesitaba---\n\xBFUh? \xBFEst\xE1s bien?---\nParece que has visto
+    un fantasma---\n<opt:No entiendo nada/follow>---\nLlevas comport\xE1ndote de
+    forma rara un buen rato---\nEn fin---\n...---\n<w:3>---\n<c:0>En realidad, quer\xEDa
+    parar aqu\xED por otro motivo...---\nNo es que quisiese mentirte, de verdad---\n<c:1>Simplemente
+    me daba verg\xFCenza---\nHay algo que tengo que decirte...---\n<opt:Basta/follow>---\n\xBFEh?---\n\xBFPerd\xF3n
+    he dicho algo raro?---\n<opt:No lo hagas/follow>---\n\xBFA qu\xE9 te refieres?---\nBueno,
+    cierra los ojos<event:close_eyes>---\n<opt:No/follow><channel:1>---\nNo puedes
+    evitar cerrar los ojos...---\nSientes como te entrega una carta en la mano<event:takePosition>---\n<channel:0>---\nLo
+    siento...<event:open_eyes> <pitch:-1>---\nTe ment\xED...<w:2>---\n<opt:No te
+    vayas/follow>---\nYa es muy tarde---\nNo es algo que puedas negociar---\nGracias
+    por todo...<event:mori><set:Drive=Depression>---\n<iload:CarDrive>---"

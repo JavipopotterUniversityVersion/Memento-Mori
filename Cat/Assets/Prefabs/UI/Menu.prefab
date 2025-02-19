@@ -269,18 +269,6 @@ MonoBehaviour:
           m_StringArgument: CarDrive
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 2bdefc992be5c8544bd85acbf57e9032, type: 2}
-        m_TargetAssemblyTypeName: AudioPlayer, Assembly-CSharp
-        m_MethodName: Stop
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &631415553862709526
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,7 +910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07435b986bdd8ff48bbeb53d401a5118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _onPause:
+  _onToggle:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8058957690622286713}
@@ -941,6 +929,36 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: SimpleAudioManagerHandler, Assembly-CSharp
         m_MethodName: Pause
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onResume:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: b52027eb9273a4c419257f605d2883a3, type: 2}
+        m_TargetAssemblyTypeName: SimpleAudioManagerHandler, Assembly-CSharp
+        m_MethodName: PlaySong
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 734153c1941b1a341aed4fe5c6d29e37, type: 2}
+          m_ObjectArgumentAssemblyTypeName: SimpleAudioManager.Song, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onIsPaused:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: b52027eb9273a4c419257f605d2883a3, type: 2}
+        m_TargetAssemblyTypeName: SimpleAudioManagerHandler, Assembly-CSharp
+        m_MethodName: Stop
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27939074f0474c2419ef9e4e0de07290, type: 3}
-  m_Name: Negotiation
+  m_Name: Wrath4
   m_EditorClassIdentifier: 
-  _value: "<channel:1>---\nHace fr\xEDo, sientes la suave brisa del viento---\n<channel:0>---\nHace
-    fr\xEDo---\nSupongo que es lo normal en Noviembre---\nMe siento mucho mejor ahora---\nGracias
-    por parar, realmente lo necesitaba---\n\xBFUh? \xBFEst\xE1s bien?---\nParece
-    que has visto un fantasma---"
+  _value: 'NO...<play:noise><w:5>---
+
+    <set:Parade=Bargaining><iload:CarStop>---'

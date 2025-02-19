@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bde49c8c4ac08ba4296bf35bcfc755cc, type: 3}
-  m_Name: Drive
+  m_Script: {fileID: 11500000, guid: d1727db5f4f489848a541c9857af5ff1, type: 3}
+  m_Name: CarNoise
   m_EditorClassIdentifier: 
-  _value: {fileID: 11400000, guid: e82fb16ded8756043a8bbf944206fe64, type: 2}
+  reverbTail: 0
+  intensityClips:
+  - {fileID: 8300000, guid: 7305528ae71e6734d9e625b99225f123, type: 3}
