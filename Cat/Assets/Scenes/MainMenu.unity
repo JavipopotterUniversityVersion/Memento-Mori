@@ -330,6 +330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1372984730}
   - component: {fileID: 1372984731}
+  - component: {fileID: 1372984732}
   m_Layer: 0
   m_Name: PlayMusic
   m_TagString: Untagged
@@ -391,6 +392,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1372984732}
+        m_TargetAssemblyTypeName: SetCursorLockState, Assembly-CSharp
+        m_MethodName: UnlockCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1372984732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372984728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc7c6f563cf9e7429f8286fc07ee298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1438178454
 GameObject:
   m_ObjectHideFlags: 0

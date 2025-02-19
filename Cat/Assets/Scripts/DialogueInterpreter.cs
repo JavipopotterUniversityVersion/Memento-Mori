@@ -7,13 +7,6 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Rendering;
 
-[Serializable]
-public struct StringEventPair
-{
-    public string key;
-    public UnityEvent value;
-}
-
 public class DialogueInterpreter : MonoBehaviour
 {
     [SerializeField] LineRenderer _lineRenderer;
@@ -34,8 +27,7 @@ public class DialogueInterpreter : MonoBehaviour
     [SerializeField] SerializableDictionary<string, Material> materials;
     [SerializeField] SerializableDictionary<string, Color> colors;
 
-    [SerializeField] StringEventPair[] stringEventDictionary;
-    Dictionary<string, UnityEvent> events = new Dictionary<string, UnityEvent>();
+    [SerializeField] SerializableDictionary<string, UnityEvent> events;
     UnityEvent<string> onSendOptions = new UnityEvent<string>();
     public UnityEvent<string> OnSendOptions => onSendOptions;
     bool _stop;
@@ -48,7 +40,6 @@ public class DialogueInterpreter : MonoBehaviour
     
     private void Awake() {
         sceneLoader = GetComponent<SceneLoader>();
-        foreach(var value in stringEventDictionary) events.Add(value.key, value.value);
         foreach(var dialogue in dialogues) dialogueDictionary.Add(dialogue.name, dialogue);
     }
 
