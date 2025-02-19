@@ -13,6 +13,7 @@ public class FirstPersonCameraRotation : MonoBehaviour {
 	[Range(0.1f, 9f)][SerializeField] float sensitivity = 2f;
 	[Tooltip("Limits vertical camera rotation. Prevents the flipping that happens when rotation goes above 90.")]
 	[Range(0f, 90f)][SerializeField] float yRotationLimit = 88f;
+	[Range(0f, 90f)][SerializeField] float XRotOffset = 0f;
     [Range(0f, 90f)][SerializeField] float XRotationLimit = 88f;
 
 	Vector2 rotation = Vector2.zero;
@@ -36,7 +37,7 @@ public class FirstPersonCameraRotation : MonoBehaviour {
 		rotation.x += Input.GetAxis(xAxis) * sensitivity;
 		rotation.y += Input.GetAxis(yAxis) * sensitivity;
 		rotation.y = Mathf.Clamp(rotation.y, -yRotationLimit, yRotationLimit);
-        if(XRotationLimit != 90) rotation.x = Mathf.Clamp(rotation.x, -XRotationLimit, XRotationLimit);
+        if(XRotationLimit != 90) rotation.x = Mathf.Clamp(rotation.x, -XRotationLimit + XRotOffset, XRotationLimit + XRotOffset);
 		var xQuat = Quaternion.AngleAxis(rotation.x, Vector3.up);
 		var yQuat = Quaternion.AngleAxis(rotation.y, Vector3.left);
 

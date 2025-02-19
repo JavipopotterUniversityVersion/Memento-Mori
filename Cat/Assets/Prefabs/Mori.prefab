@@ -229,7 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interpreter: {fileID: 0}
   center: {fileID: 4281846850728145348}
-  optionsDistance: 0.3
+  optionsDistance: 0.4
   optionsSpeed: 5
   targetLayer:
     serializedVersion: 2

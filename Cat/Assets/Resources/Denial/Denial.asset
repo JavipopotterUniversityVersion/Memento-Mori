@@ -35,4 +35,4 @@ MonoBehaviour:
     dejemos el tema.---\n<w:4>---\nOye...---\n\xBFTe parece bien si paramos un segundo
     por aqu\xED?---\nNecesito tomar un poco el aire.---\nY a\xFAn nos queda un buen
     rato.---\n<opt:Me parece bien/follow,Creo que yo tambi\xE9n lo necesito/follow>---\nGenial,
-    pues paremos por aqu\xED mismo---\n<w:2>---\n<load:CarStop> <stop:CarNoise>"
+    pues paremos por aqu\xED mismo---\n<w:2>---\n<set:Parade=Denial2><load:CarStop>"
