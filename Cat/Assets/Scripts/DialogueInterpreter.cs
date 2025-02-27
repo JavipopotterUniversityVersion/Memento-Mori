@@ -36,6 +36,8 @@ public class DialogueInterpreter : MonoBehaviour
     [SerializeField] String[] dialogues;
     Dictionary<string, String> dialogueDictionary = new Dictionary<string, String>();
 
+    Dictionary<string, bool> _localBools = new Dictionary<string, bool>();
+
     public void Continue() => _stop = false;
     
     private void Awake() {
@@ -55,15 +57,18 @@ public class DialogueInterpreter : MonoBehaviour
     public void StartDialogue(String dialogue) => StartCoroutine(StartDialogueRoutine(dialogue.Value));
     public void StartDialogue(string dialogue) => StartCoroutine(StartDialogueRoutine(dialogueDictionary[dialogue].Value));
     IEnumerator StartDialogueRoutine(string dialogue)
-    {
+    {   
+        _localBools.Clear();
+
         channelIndex = 0;
         dialogueCache = dialogue;
         _lineRenderer.enabled = true;
         string[] lines = dialogue.Split($"---");
 
-        foreach(string line in lines)
+        for(int c = 0; c < lines.Length; c++)
         {
-            _text.text = line;
+            string line = lines[c];
+            _text.text = line.Trim();
             _text.maxVisibleCharacters = 0;
             float waitTime = timeBetweenLines;
 
@@ -76,6 +81,22 @@ public class DialogueInterpreter : MonoBehaviour
                     string value = _text.text.Split("<")[1].Split(">")[0];
                     _text.text = _text.text.Replace("<" + value + ">", "");
                     i--;
+
+                    string[] data = value.Split(":", 2);
+                    if(data[0] == "if")
+                    {
+                        if(_localBools[data[1]])
+                        {
+                            _text.text = _text.text.Replace("<if:" + data[1] + ">", "");
+                            _text.text = _text.text.Replace("</" + data[1] + ">", "");
+                        }
+                        else
+                        {
+                            string inside = _text.text.Split("<if:" + data[1] + ">")[1].Split("</" + data[1] + ">")[0];
+                            _text.text = _text.text.Replace("<if:" + data[1] + ">" + inside + "</" + data[1] + ">", "");
+                        }
+                    }
+
                     ReadCommand(value, ref waitTime);
                 } else if(_text.text[i] != ' ' && !Input.GetKey(KeyCode.Tab)) _onCharWritten.Invoke();
 
@@ -136,7 +157,10 @@ public class DialogueInterpreter : MonoBehaviour
         {
             string stringRef = arg.Split("=")[0];
             string dialogueName = arg.Split("=")[1];
-            Resources.Load<StringContainer>(stringRef).SetValue(dialogueDictionary[dialogueName]);
+            StringContainer container = Resources.Load<StringContainer>("Dialogues/" + stringRef);
+            print(stringRef);
+            print(container);
+            container.SetValue(dialogueDictionary[dialogueName]);
         }
         else if(value == "play")
         {
@@ -172,6 +196,18 @@ public class DialogueInterpreter : MonoBehaviour
         {
             string[] subArgs = arg.Split("/");
             materials[subArgs[0]].SetFloat(subArgs[1], subArgs[2] == "true" ? 1 : 0);
+        }
+        else if(value == "Bool")
+        {
+            string[] subArgs = arg.Split("/");
+            Bool boolRef = Resources.Load<Bool>(subArgs[0]);
+            boolRef.Set(subArgs[1] == "true");
+        }
+        else if(value == "bool")
+        {
+            string[] subArgs = arg.Split("/");
+            if(_localBools.ContainsKey(subArgs[0])) _localBools[subArgs[0]] = subArgs[1] == "true";
+            else _localBools.Add(subArgs[0], subArgs[1] == "true");
         }
     }
 }

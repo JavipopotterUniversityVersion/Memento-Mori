@@ -15,8 +15,8 @@ MonoBehaviour:
   _value: "<c:1> <event:silence>\xBFTe culpas a ti mismo por cosas fuera de tu control?---\n...---\nOye,
     no me estabas escuchando <event:unSilence>---\n\xBFEst\xE1s bien?---\n\xBFSeguro
     que no quieres parar? <opt:Est\xE1bamos fuera/follow>---\n\xBFQu\xE9? No hemos
-    parado en nig\xFAn momento---\n<c:3> Est\xE1s perdiendo la cabeza igual que yo
-    jejejsj---\n<opt:\xBFIgual que t\xFA?/follow>---\n<c:3>Es broma idiota---\n<c:0>
+    parado en ning\xFAn momento---\n<c:3> Est\xE1s perdiendo la cabeza igual que
+    yo jejejsj---\n<opt:\xBFIgual que t\xFA?/follow>---\n<c:3>Es broma idiota---\n<c:0>
     <w:3>---\n<c:2> Entonces...<w:2>---\n\xBFTe culpas a ti mismo por cosas fuera
     de tu control?<opt:\xBFA qu\xE9 te refieres?/follow>---\nEs que el otro d\xEDa
     vi como atropellaban a una liebre---\nFue muy r\xE1pido pero no pude evitar sentir

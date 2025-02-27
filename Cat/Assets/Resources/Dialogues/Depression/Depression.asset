@@ -15,6 +15,6 @@ MonoBehaviour:
   _value: "<c:2><setMatColor:pixel/_Filter/blue>---\n...<w:4>---\n<opt:\xBFEst\xE1s
     bien?/follow>---\n...<w:4>---\n<opt:\xBFHola?/follow>---\n<w:2>---\n<charTime:0,1>Todo
     siempre se derrumba...---\n<w:2>---\nNo existe futuro para m\xED...---\n<opt:No
-    es verdad/follow><charTime:0,035>---\nNo sabes nada sobre m\xED.---\nNo tiene
+    es verdad/follow><charTime:0,035>---\nNo sabes nada sobre m\xED.---\nNo tienes
     ni idea.---\n<w:4>---\nLo siento, no mereces cargar con esto.---\nMereces ser
-    libre.---\nGracias por recordarme.---\nAdi\xF3s<set:Drive=Acceptance>---\n<opt:Espera/follow><iload:CarDrive>---"
+    libre.---\nGracias por recordarme.---\nAdi\xF3s<set:Drive=Acceptance>---\n<opt:Espera/follow><iload:MainMenu>---"

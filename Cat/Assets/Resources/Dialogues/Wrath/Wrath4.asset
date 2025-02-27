@@ -10,13 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27939074f0474c2419ef9e4e0de07290, type: 3}
-  m_Name: Acceptance
+  m_Name: Wrath4
   m_EditorClassIdentifier: 
-  _value: '<setMatColor:pixel/_Filter/white>---<event:silence><event:bye_mori><channel:1>---
+  _value: '<channel:1>---
 
-    <w:2>---
+    NO...<play:noise><w:5>---
 
-    <event:unSilence><charTime:0,1>---
-
-    MEMENTO
-    MORI<w:5><load:MainMenu>---'
+    <set:Parade=Bargaining><iload:CarStop>---'

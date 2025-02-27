@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1727db5f4f489848a541c9857af5ff1, type: 3}
   m_Name: MoriTheme
   m_EditorClassIdentifier: 
-  reverbTail: 0
+  reverbTail: 6
   intensityClips:
   - {fileID: 8300000, guid: 46b5ac09c635101438d382c92ffbbe90, type: 3}

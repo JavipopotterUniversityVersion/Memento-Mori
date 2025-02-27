@@ -807,10 +807,6 @@ PrefabInstance:
       propertyPath: _origin
       value: 
       objectReference: {fileID: 1641410281}
-    - target: {fileID: 6405229001191708630, guid: 137a8dc8a5405b14c89024460eba6172, type: 3}
-      propertyPath: margin.x
-      value: 0.45
-      objectReference: {fileID: 0}
     - target: {fileID: 6468313820577045773, guid: 137a8dc8a5405b14c89024460eba6172, type: 3}
       propertyPath: _onEnable.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 

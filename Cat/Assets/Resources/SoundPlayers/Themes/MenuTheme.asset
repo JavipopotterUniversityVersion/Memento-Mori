@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1727db5f4f489848a541c9857af5ff1, type: 3}
   m_Name: MenuTheme
   m_EditorClassIdentifier: 
-  reverbTail: 0
+  reverbTail: 3.206
   intensityClips:
   - {fileID: 8300000, guid: 6add8484137be2d4da0cd63eff3fe89a, type: 3}
