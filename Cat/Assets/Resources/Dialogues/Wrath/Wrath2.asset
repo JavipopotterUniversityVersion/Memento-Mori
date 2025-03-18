@@ -17,6 +17,6 @@ MonoBehaviour:
     realidad no, no las hay pero s\xED las vemos---\nMuchas de las estrellas que
     ves murieron hace millones de a\xF1os---\nPero estaban tan lejos que su luz a\xFAn
     nos llega---\n<c:2>Es como una imagen del pasado---\nUn recuerdo v\xEDvido de
-    tiempos anteriores---\n<opt:\xBFNo estabamos en el coche?/follow>---\n<c:1>\xBFEh?
-    Claro, pero acordamos que parar\xEDamos aqu\xED---\nEn realidad tengo algo que
-    decirte...<set:Drive=Wrath3> <iload:CarDrive>\n"
+    tiempos anteriores---\n<opt:\xBFNo estabamos en el coche?/follow>---\n<c:side_eye>\xBFEh?
+    Claro, pero acordamos que parar\xEDamos aqu\xED---<c:1>\nEn realidad tengo algo
+    que decirte...<set:Drive=Wrath3> <iload:CarDrive>\n"

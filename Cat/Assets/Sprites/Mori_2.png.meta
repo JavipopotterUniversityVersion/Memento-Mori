@@ -184,138 +184,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Mori_2_4
-      rect:
-        serializedVersion: 2
-        x: 4709
-        y: 1466
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 302d43d9e2749f8428f298016c967af6
-      internalID: 101098701
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mori_2_5
-      rect:
-        serializedVersion: 2
-        x: 2214
-        y: 1380
-        width: 19
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a544269d31b757144bc8a2a77db139c9
-      internalID: -867085006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mori_2_6
-      rect:
-        serializedVersion: 2
-        x: 3643
-        y: 1292
-        width: 4
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea45d5af303072045bd95c298d0513ab
-      internalID: 1536026188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mori_2_7
-      rect:
-        serializedVersion: 2
-        x: 4075
-        y: 983
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 336d5fc42b56d454c87627169a3b6c8f
-      internalID: -946677088
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mori_2_8
-      rect:
-        serializedVersion: 2
-        x: 3884
-        y: 881
-        width: 5
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92e4bb3450e378547b4d8ba4f6bb9e1b
-      internalID: -1752243372
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mori_2_9
-      rect:
-        serializedVersion: 2
-        x: 3796
-        y: 711
-        width: 12
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: afe03fb823fad754d89d1aa14152bc3b
-      internalID: -1975973827
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -332,6 +200,7 @@ TextureImporter:
     nameFileIdTable:
       Mori_2_0: 767261922
       Mori_2_1: 328143750
+      Mori_2_10: 378333643
       Mori_2_2: -1629854333
       Mori_2_3: -2079477256
       Mori_2_4: 101098701

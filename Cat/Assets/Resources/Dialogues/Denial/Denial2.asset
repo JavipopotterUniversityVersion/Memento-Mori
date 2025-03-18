@@ -18,6 +18,6 @@ MonoBehaviour:
     otro motivo...---\nNo es que quisiese mentirte, de verdad---\n<c:1>Simplemente
     me daba verg\xFCenza---\nHay algo que tengo que decirte...---\n...---\n<w:3>---\nCierra
     los ojos, y no los abras por favor...---\n<event:close_eyes> <channel:1>---\nSientes
-    como te entrega una carta en la mano<event:takePosition>---\n<channel:0>---\nLo
+    como te entrega una carta en la mano<c:stand><event:takePosition>---\n<channel:0>---\nLo
     siento...<event:open_eyes> <pitch:-1>---\nTe ment\xED...<w:2>---\nGracias por
     todo, de verdad---\nAdi\xF3s<w:2>---\n<event:mori>---\n<w:3><play:noise>---\n<set:Drive=Wrath><pitch:1><load:carDrive/white>"

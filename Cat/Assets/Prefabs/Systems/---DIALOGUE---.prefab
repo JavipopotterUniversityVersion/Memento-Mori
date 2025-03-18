@@ -727,6 +727,16 @@ MonoBehaviour:
   - {fileID: -1985562382, guid: 88b558a2e35865949884f340b144ffb2, type: 3}
   - {fileID: 385855885, guid: 88b558a2e35865949884f340b144ffb2, type: 3}
   - {fileID: -1329451671, guid: 88b558a2e35865949884f340b144ffb2, type: 3}
+  spriteDictionary:
+    list:
+    - Key: stand
+      Value: {fileID: 328143750, guid: 82db783e9e46b8948942c6988c2c21b6, type: 3}
+    - Key: insane
+      Value: {fileID: 767261922, guid: 82db783e9e46b8948942c6988c2c21b6, type: 3}
+    - Key: side_eye
+      Value: {fileID: -1629854333, guid: 82db783e9e46b8948942c6988c2c21b6, type: 3}
+    - Key: depressed
+      Value: {fileID: -2079477256, guid: 82db783e9e46b8948942c6988c2c21b6, type: 3}
   volume: {fileID: 0}
   audioHandler: {fileID: 11400000, guid: 1029719db1797ac43a9e71cd54b4c821, type: 2}
   materials:
