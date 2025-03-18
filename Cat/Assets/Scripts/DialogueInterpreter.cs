@@ -20,6 +20,7 @@ public class DialogueInterpreter : MonoBehaviour
     [SerializeField] UnityEvent _onCharWritten;
     [SerializeField] SpriteRenderer sr;
     [SerializeField] Sprite[] sprites;
+    [SerializeField] SerializableDictionary<string, Sprite> spriteDictionary;
     [SerializeField] Volume volume;
     SceneLoader sceneLoader;
 
@@ -56,6 +57,13 @@ public class DialogueInterpreter : MonoBehaviour
     public void StartDialogue(StringContainer dialogue) => StartCoroutine(StartDialogueRoutine(dialogue.Value));
     public void StartDialogue(String dialogue) => StartCoroutine(StartDialogueRoutine(dialogue.Value));
     public void StartDialogue(string dialogue) => StartCoroutine(StartDialogueRoutine(dialogueDictionary[dialogue].Value));
+
+    struct CommandData
+    {
+        public string command;
+        public int index;
+    }
+
     IEnumerator StartDialogueRoutine(string dialogue)
     {   
         _localBools.Clear();
@@ -123,7 +131,11 @@ public class DialogueInterpreter : MonoBehaviour
         string value = command.Split(":", 2)[0].Trim();
         string arg = command.Split(":", 2)[1].Trim();
 
-        if(value == "c") sr.sprite = sprites[int.Parse(arg)];
+        if(value == "c")
+        {
+            if(int.TryParse(arg, out int result)) sr.sprite = sprites[int.Parse(arg)];
+            else sr.sprite = spriteDictionary[arg];
+        }
         else if(value == "pitch") audioHandler.OnSetPitch.Invoke(float.Parse(arg));
         else if(value == "event") events[arg].Invoke();
         else if(value == "w") waitTime = float.Parse(arg);

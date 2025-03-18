@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27939074f0474c2419ef9e4e0de07290, type: 3}
   m_Name: Acceptance
   m_EditorClassIdentifier: 
-  _value: '<setMatColor:pixel/_Filter/white>---<event:silence><event:bye_mori><channel:1>---
+  _value: '<setMatColor:pixel/_Filter/white>---<event:bye_mori><channel:1>---
 
     <w:2>---
 
-    <event:unSilence><charTime:0,1><setBool:Completed/true>---
+    <charTime:0,1><setBool:Completed/true>---
 
     MEMENTO
     MORI<w:5><load:MainMenu>---'

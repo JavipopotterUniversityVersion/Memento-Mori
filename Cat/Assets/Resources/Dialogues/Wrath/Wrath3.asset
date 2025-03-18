@@ -27,4 +27,4 @@ MonoBehaviour:
     que suelo asumir la culpa de todo lo malo que me rodea---\n...---\n<w:3>---\n<c:0>Estoy
     algo cansada---\n\xBFPodr\xEDamos parar por aqu\xED?---\nNecesito tomar un poco
     el aire---\n<opt:\xBFTengo opci\xF3n?/follow>---\nEhm... Claro, no hace falta
-    que paremos<iload:Void> si no quieres---"
+    que paremos<iload:Void><event:silence> si no quieres---"
