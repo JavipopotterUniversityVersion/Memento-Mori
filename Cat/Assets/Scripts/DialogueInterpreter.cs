@@ -23,6 +23,7 @@ public class DialogueInterpreter : MonoBehaviour
     [SerializeField] SerializableDictionary<string, Sprite> spriteDictionary;
     [SerializeField] Volume volume;
     SceneLoader sceneLoader;
+    [SerializeField] ClausController clausController;
 
     [SerializeField] SimpleAudioManagerHandler audioHandler;
     [SerializeField] SerializableDictionary<string, Material> materials;
@@ -133,6 +134,7 @@ public class DialogueInterpreter : MonoBehaviour
 
         if(value == "c")
         {
+            clausController.Set(int.Parse(arg));
             if(int.TryParse(arg, out int result)) sr.sprite = sprites[int.Parse(arg)];
             else sr.sprite = spriteDictionary[arg];
         }
