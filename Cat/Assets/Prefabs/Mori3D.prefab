@@ -286,6 +286,22 @@ MonoBehaviour:
   _bodyMaterials:
   - {fileID: -2274090305892019849, guid: 083538f2d5947a349acd0fa39a45f178, type: 3}
   - {fileID: -876546973899608171, guid: b8673429945299740befdb55cc9cc1e2, type: 3}
+  _triggerNames:
+    list:
+    - Key: DEFAULT
+      Value: 0
+    - Key: SECOND
+      Value: 1
+    - Key: SIDE
+      Value: 2
+    - Key: HAPPY
+      Value: 3
+    - Key: DEPRESSED
+      Value: 4
+    - Key: FALL
+      Value: 5
+    - Key: STAND
+      Value: 6
 --- !u!137 &5865720673819753223 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 1630794972795428178, guid: 083538f2d5947a349acd0fa39a45f178, type: 3}

@@ -18,9 +18,6 @@ public class DialogueInterpreter : MonoBehaviour
     [SerializeField] float timeBetweenChars = 0.05f;
     [SerializeField] float timeBetweenLines = 1.0f;
     [SerializeField] UnityEvent _onCharWritten;
-    [SerializeField] SpriteRenderer sr;
-    [SerializeField] Sprite[] sprites;
-    [SerializeField] SerializableDictionary<string, Sprite> spriteDictionary;
     [SerializeField] Volume volume;
     SceneLoader sceneLoader;
     [SerializeField] ClausController clausController;
@@ -134,9 +131,8 @@ public class DialogueInterpreter : MonoBehaviour
 
         if(value == "c")
         {
-            clausController.Set(int.Parse(arg));
-            if(int.TryParse(arg, out int result)) sr.sprite = sprites[int.Parse(arg)];
-            else sr.sprite = spriteDictionary[arg];
+            if(int.TryParse(arg, out int result)) clausController.Set(result);
+            else clausController.Set(arg);
         }
         else if(value == "pitch") audioHandler.OnSetPitch.Invoke(float.Parse(arg));
         else if(value == "event") events[arg].Invoke();

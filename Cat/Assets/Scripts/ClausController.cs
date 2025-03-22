@@ -6,44 +6,17 @@ public class ClausController : MonoBehaviour
     [SerializeField] SkinnedMeshRenderer _bodyRenderer;
 
     [SerializeField] Material[] _bodyMaterials;
+    [SerializeField] SerializableDictionary<string, int> _triggerNames;
 
     private void Awake() {
         animator = GetComponent<Animator>();
     }
 
-    public void Set(int keyIndex) {
+    public void Set(string triggerName) {
+        if(_triggerNames.ContainsKey(triggerName)) animator.SetTrigger(_triggerNames[triggerName].ToString());
+    }
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            keyIndex = 0;
-            _bodyRenderer.material = _bodyMaterials[0];
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            keyIndex = 1;
-            _bodyRenderer.material = _bodyMaterials[1];
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            keyIndex = 2;
-            _bodyRenderer.material = _bodyMaterials[1];
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            keyIndex = 3;
-            _bodyRenderer.material = _bodyMaterials[0];
-        }
-        else if(Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            keyIndex = 4;
-            _bodyRenderer.material = _bodyMaterials[1];
-        }
-        else if(Input.GetKeyDown(KeyCode.Alpha6))
-        {
-            keyIndex = 5;
-            _bodyRenderer.material = _bodyMaterials[1];
-        }
-        
+    public void Set(int keyIndex) {
         if(keyIndex != -1) animator.SetTrigger(keyIndex.ToString());
     }
 }
