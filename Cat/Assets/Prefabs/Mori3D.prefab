@@ -155,7 +155,7 @@ PrefabInstance:
     - target: {fileID: 1630794972795428178, guid: 083538f2d5947a349acd0fa39a45f178, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: -2274090305892019849, guid: 083538f2d5947a349acd0fa39a45f178, type: 3}
+      objectReference: {fileID: 2100000, guid: 2d22f2387de6563478fdb3ef1545c414, type: 2}
     - target: {fileID: 2126962270025453760, guid: 083538f2d5947a349acd0fa39a45f178, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -0.36260247
@@ -283,9 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bodyRenderer: {fileID: 5865720673819753223}
-  _bodyMaterials:
-  - {fileID: -2274090305892019849, guid: 083538f2d5947a349acd0fa39a45f178, type: 3}
-  - {fileID: -876546973899608171, guid: b8673429945299740befdb55cc9cc1e2, type: 3}
+  _currentFace: {fileID: 2100000, guid: 2d22f2387de6563478fdb3ef1545c414, type: 2}
   _triggerNames:
     list:
     - Key: DEFAULT
@@ -302,6 +300,11 @@ MonoBehaviour:
       Value: 5
     - Key: STAND
       Value: 6
+  _eyesPresets:
+  - {x: -0.48, y: 1.19}
+  - {x: -2.19, y: -3.37}
+  - {x: -1.46, y: 2.99}
+  _currentFacePreset: {fileID: 11400000, guid: 39e04f58ca40d064599a4b790f8035b2, type: 2}
 --- !u!137 &5865720673819753223 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 1630794972795428178, guid: 083538f2d5947a349acd0fa39a45f178, type: 3}

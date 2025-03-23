@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27939074f0474c2419ef9e4e0de07290, type: 3}
   m_Name: Denial
   m_EditorClassIdentifier: 
-  _value: "<w:3><setMatColor:pixel/_Filter/white>---\nEscucha...---\n<c:1>Imag\xEDnate
+  _value: "<w:3><setMatColor:pixel/_Filter/white>---\n<e:0><f:Happy>Escucha...---\n<c:1>Imag\xEDnate
     unos siameses.---\nRollo, comparten cuerpo y todas esas cosas.---\n<c:0>\xBFQu\xE9
     pasa si uno de ellos muere?---\n\xBFMueren los dos?\xBFO solo muere uno?---\n<c:1>Si
     solo muere uno, que turbio \xBFno?---\n<c:0>El otro tendr\xEDa que cargar con
     el cad\xE1ver\nde su hermano durante el resto de su vida... <w:3>---\n<c:3>Ay,
-    que miedo \xBFno?---\n<c:0>Menos mal que no soy siam\xE9s.---\n<w:5>---\n<c:2>Hay
-    luna llena...---\n<c:3>Es una noche muy bonita la verdad.---\n<c:1>Oye, a\xFAn
-    no te he dado las gracias por acercarme a casa.---\nNo entiendo por qu\xE9 eres
-    tan amable conmigo.---\nTe lo intentar\xE9 compensar.---\nLo siento por ser una
-    molestia<opt:No eres una molestia/follow, No es nada/follow>---\n...<w:2>---\n\xBFTe
+    que miedo \xBFno?---\n<c:0>Menos mal que no soy siam\xE9s.---\n<w:5>---\n<c:2><e:1>Hay
+    luna llena...---\n<c:3>Es una noche muy bonita la verdad.---\n<c:1><e:0>Oye,
+    a\xFAn no te he dado las gracias por acercarme a casa.---\nNo entiendo por qu\xE9
+    eres tan amable conmigo.---\n<e:1>Te lo intentar\xE9 compensar.---\n<e:0>Lo siento
+    por ser una molestia<opt:No eres una molestia/follow, No es nada/follow>---\n...<w:2>---\n<e:1>\xBFTe
     has dado cuenta de que las personas mentimos constantemente?---\nYa no me refiero
     a solo mentir al resto.---\nConstantemente nos mentimos a nosotros mismos.---\nPara
     no afrontar la dolorosa verdad.---\nCrees que mentir est\xE1 bien para evadir

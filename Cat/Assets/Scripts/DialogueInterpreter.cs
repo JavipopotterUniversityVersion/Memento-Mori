@@ -82,33 +82,22 @@ public class DialogueInterpreter : MonoBehaviour
             {
                 _text.maxVisibleCharacters++;
 
-                if(_text.text[i] == '<')
-                {
+                if(_text.text[i] == '<'){
                     string value = _text.text.Split("<")[1].Split(">")[0];
                     _text.text = _text.text.Replace("<" + value + ">", "");
                     i--;
 
-                    string[] data = value.Split(":", 2);
-                    if(data[0] == "if")
-                    {
-                        if(_localBools[data[1]])
-                        {
-                            _text.text = _text.text.Replace("<if:" + data[1] + ">", "");
-                            _text.text = _text.text.Replace("</" + data[1] + ">", "");
-                        }
-                        else
-                        {
-                            string inside = _text.text.Split("<if:" + data[1] + ">")[1].Split("</" + data[1] + ">")[0];
-                            _text.text = _text.text.Replace("<if:" + data[1] + ">" + inside + "</" + data[1] + ">", "");
-                        }
-                    }
-
                     ReadCommand(value, ref waitTime);
-                } else if(_text.text[i] != ' ' && !Input.GetKey(KeyCode.Tab)) _onCharWritten.Invoke();
+                }
+                else if(_text.text[i] != ' ' && !Input.GetKey(KeyCode.Tab)){
+                    _onCharWritten.Invoke();
+                    clausController.Talk();
+                }
 
                 if(Input.GetKey(KeyCode.Tab)) yield return null;
                 else yield return new WaitForSeconds(timeBetweenChars);
             }
+            clausController.StopTalking();
             yield return new WaitWhile(() => _stop);
             if(Input.GetKey(KeyCode.Tab)) yield return null;
             else yield return new WaitForSeconds(waitTime);
@@ -133,6 +122,15 @@ public class DialogueInterpreter : MonoBehaviour
         {
             if(int.TryParse(arg, out int result)) clausController.Set(result);
             else clausController.Set(arg);
+        }
+        else if(value == "f")
+        {
+            // clausController.SetCurrentFace(Resources.Load<Texture2D>("Textures/" + arg));
+            clausController.SetCurrentFace(Resources.Load<FacePreset>("FacePresets/" + arg));
+        }
+        else if(value == "e")
+        {
+            clausController.MoveEyes(int.Parse(arg));
         }
         else if(value == "pitch") audioHandler.OnSetPitch.Invoke(float.Parse(arg));
         else if(value == "event") events[arg].Invoke();
