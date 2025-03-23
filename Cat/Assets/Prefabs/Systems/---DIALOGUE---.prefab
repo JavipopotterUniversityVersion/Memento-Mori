@@ -721,22 +721,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  sr: {fileID: 0}
-  sprites:
-  - {fileID: -1939299693, guid: 88b558a2e35865949884f340b144ffb2, type: 3}
-  - {fileID: -1985562382, guid: 88b558a2e35865949884f340b144ffb2, type: 3}
-  - {fileID: 385855885, guid: 88b558a2e35865949884f340b144ffb2, type: 3}
-  - {fileID: -1329451671, guid: 88b558a2e35865949884f340b144ffb2, type: 3}
-  spriteDictionary:
-    list:
-    - Key: STAND
-      Value: {fileID: 328143750, guid: 82db783e9e46b8948942c6988c2c21b6, type: 3}
-    - Key: INSANE
-      Value: {fileID: 767261922, guid: 82db783e9e46b8948942c6988c2c21b6, type: 3}
-    - Key: SIDE_EYE
-      Value: {fileID: -1629854333, guid: 82db783e9e46b8948942c6988c2c21b6, type: 3}
-    - Key: DEPRESSED
-      Value: {fileID: -2079477256, guid: 82db783e9e46b8948942c6988c2c21b6, type: 3}
   volume: {fileID: 0}
   clausController: {fileID: 0}
   audioHandler: {fileID: 11400000, guid: 1029719db1797ac43a9e71cd54b4c821, type: 2}
@@ -747,7 +731,7 @@ MonoBehaviour:
   colors:
     list:
     - Key: red
-      Value: {r: 0.7660377, g: 0.18888903, b: 0.18355994, a: 1}
+      Value: {r: 0.85490197, g: 0.5647059, b: 0.56078434, a: 1}
     - Key: blue
       Value: {r: 0.42229262, g: 0.5831496, b: 0.86415094, a: 1}
     - Key: yellow
