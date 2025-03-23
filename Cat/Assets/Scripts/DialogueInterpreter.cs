@@ -89,7 +89,7 @@ public class DialogueInterpreter : MonoBehaviour
 
                     ReadCommand(value, ref waitTime);
                 }
-                else if(_text.text[i] != ' ' && !Input.GetKey(KeyCode.Tab)){
+                else if(_text.text[i] != ' ' && !Input.GetKey(KeyCode.Tab) && channelIndex == 0){
                     _onCharWritten.Invoke();
                     clausController.Talk();
                 }
