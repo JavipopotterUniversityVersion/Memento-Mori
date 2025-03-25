@@ -33,7 +33,7 @@ Material:
   stringTagMap: {}
   disabledShaderPasses:
   - MOTIONVECTORS
-  m_LockedProperties: 
+  m_LockedProperties: _R_Rot
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -61,6 +61,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Eyebrows:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Eyes:
         m_Texture: {fileID: 2800000, guid: 2649aec784365034fb64dc2605bedb2d, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -74,7 +78,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Mouth:
-        m_Texture: {fileID: 2800000, guid: e659f8a2fae29a442b2eb4b376dc6e02, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3fd9cacfdb2d0634c99fc10f32a632b5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:

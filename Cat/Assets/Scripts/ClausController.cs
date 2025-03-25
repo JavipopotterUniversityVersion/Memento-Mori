@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ClausController : MonoBehaviour
 {
-    Animator animator;
+    [SerializeField] Animator animator;
     [SerializeField] SkinnedMeshRenderer _bodyRenderer;
 
     [SerializeField] Material _currentFace;
@@ -13,10 +13,6 @@ public class ClausController : MonoBehaviour
     [SerializeField] FacePreset _currentFacePreset;
     int _iterationsToChangeMouth = 1;
     bool _mouthOpened = false;
-
-    private void Awake() {
-        animator = GetComponent<Animator>();
-    }
 
     private void Start() {
         StartCoroutine(BlinkRoutine());
@@ -41,6 +37,7 @@ public class ClausController : MonoBehaviour
         _currentFacePreset = facePreset;
         _currentFace.SetTexture("_Eyes", facePreset.eyes);
         _currentFace.SetTexture("_Mouth", facePreset.mouth);
+        _currentFace.SetTexture("_Eyebrows", facePreset.eyebrows);
     }
 
     public void MoveEyes(int index) {

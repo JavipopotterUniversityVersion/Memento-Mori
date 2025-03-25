@@ -282,6 +282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a53dc1a10901654298881431e7f4e7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 4950199792457882294}
   _bodyRenderer: {fileID: 5865720673819753223}
   _currentFace: {fileID: 2100000, guid: 2d22f2387de6563478fdb3ef1545c414, type: 2}
   _triggerNames:
