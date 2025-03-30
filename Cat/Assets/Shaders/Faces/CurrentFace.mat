@@ -62,7 +62,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Eyebrows:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 48729abfc9097d240bb854abf33a4ffc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Eyes:
@@ -87,6 +87,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Pupils:
+        m_Texture: {fileID: 2800000, guid: b24e7fd19725fa64a975aab3cde608fb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_1dbccca626b14198a1f07ee4b715abc1_Texture_1_Texture2D:

@@ -38,6 +38,7 @@ public class ClausController : MonoBehaviour
         _currentFace.SetTexture("_Eyes", facePreset.eyes);
         _currentFace.SetTexture("_Mouth", facePreset.mouth);
         _currentFace.SetTexture("_Eyebrows", facePreset.eyebrows);
+        _currentFace.SetTexture("_Pupils", facePreset.pupils);
     }
 
     public void MoveEyes(int index) {
