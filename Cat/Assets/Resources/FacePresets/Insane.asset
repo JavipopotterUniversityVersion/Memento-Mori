@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9dab810ab2895d43a0e16c116687d01, type: 3}
+  m_Name: Insane
+  m_EditorClassIdentifier: 
+  eyebrows: {fileID: 2800000, guid: 48729abfc9097d240bb854abf33a4ffc, type: 3}
+  eyes: {fileID: 2800000, guid: eb70a16395bb8dd4593e36ffefc9cd72, type: 3}
+  closed_eyes: {fileID: 2800000, guid: 2cb94d715024d7442842134a2115ac61, type: 3}
+  mouth: {fileID: 2800000, guid: 3fd9cacfdb2d0634c99fc10f32a632b5, type: 3}
+  opened_mouth: {fileID: 2800000, guid: 1ad6597676575e3438e4173941060c1d, type: 3}
+  pupils: {fileID: 2800000, guid: c8012e361d69285429feac027bc1ed64, type: 3}

@@ -8,6 +8,7 @@ public class ClausController : MonoBehaviour
 
     [SerializeField] Material _currentFace;
     [SerializeField] SerializableDictionary<string, int> _triggerNames;
+    public SerializableDictionary<string, int> TriggerNames => _triggerNames;
     [SerializeField] Vector2[] _eyesPresets;
 
     [SerializeField] FacePreset _currentFacePreset;

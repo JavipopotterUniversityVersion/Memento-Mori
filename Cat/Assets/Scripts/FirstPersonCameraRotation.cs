@@ -25,14 +25,28 @@ public class FirstPersonCameraRotation : MonoBehaviour {
         Cursor.visible = false;
     }
 
+	bool isPaused = false;
+
 	void Update(){
-		bool isPaused = Cursor.lockState == CursorLockMode.None;
-		if(Input.GetKeyDown(KeyCode.T)) {
-			Cursor.lockState = isPaused ? CursorLockMode.Locked : CursorLockMode.None;
-			Cursor.visible = isPaused;
+		if(Input.GetKeyDown(KeyCode.T) ||Input.GetKeyDown(KeyCode.Escape)) {
+			isPaused = true;
 		}
 
-		if(isPaused) return;
+		if(Input.GetMouseButtonDown(0)) {
+			isPaused = false;
+		}
+
+		if(isPaused)
+		{
+			Cursor.lockState = CursorLockMode.None;
+			Cursor.visible = true;
+			return;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+			Cursor.visible = false;
+		}
 
 		rotation.x += Input.GetAxis(xAxis) * sensitivity;
 		rotation.y += Input.GetAxis(yAxis) * sensitivity;
