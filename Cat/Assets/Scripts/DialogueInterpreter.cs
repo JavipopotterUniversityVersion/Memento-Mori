@@ -45,7 +45,6 @@ public class DialogueInterpreter : MonoBehaviour
     public bool IsSkip() => _skip;
 
     int _lineIndex = 0;
-    public void SetLineIndex(int index) => _lineIndex = index;
     
     private void Awake() {
         sceneLoader = GetComponent<SceneLoader>();
@@ -60,6 +59,7 @@ public class DialogueInterpreter : MonoBehaviour
         }
     }
 
+    public void StartDialogue(String dialogue, int index) => StartCoroutine(StartDialogueRoutine(dialogue.Value, index));
     public void StartDialogue(StringContainer dialogue) => StartCoroutine(StartDialogueRoutine(dialogue.Value));
     public void StartDialogue(String dialogue) => StartCoroutine(StartDialogueRoutine(dialogue.Value));
     public void StartDialogue(string dialogue) => StartCoroutine(StartDialogueRoutine(dialogueDictionary[dialogue].Value));
@@ -70,7 +70,7 @@ public class DialogueInterpreter : MonoBehaviour
         public int index;
     }
 
-    IEnumerator StartDialogueRoutine(string dialogue)
+    IEnumerator StartDialogueRoutine(string dialogue, int index = 0)
     {   
         _localBools.Clear();
 
@@ -79,7 +79,7 @@ public class DialogueInterpreter : MonoBehaviour
         _lineRenderer.enabled = true;
         string[] lines = dialogue.Split($"---");
 
-        for(_lineIndex = 0; _lineIndex < lines.Length; _lineIndex++)
+        for(_lineIndex = index; _lineIndex < lines.Length; _lineIndex++)
         {
             string line = lines[_lineIndex];
             _text.text = line.Trim();

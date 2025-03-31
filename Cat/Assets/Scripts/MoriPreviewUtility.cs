@@ -126,8 +126,7 @@ public class MoriPreviewUtilityCustomInspector : Editor
             if(GUILayout.Button(output))
             {
                 moriPreviewUtility.Interpreter.StopAllCoroutines();
-                moriPreviewUtility.Interpreter.StartDialogue(_selectedDialogue);
-                moriPreviewUtility.Interpreter.SetLineIndex(Array.IndexOf(selectedDialogueLines, line));
+                moriPreviewUtility.Interpreter.StartDialogue(_selectedDialogue, Array.IndexOf(selectedDialogueLines, line));
                 moriPreviewUtility.Interpreter.Continue();
             }
         }
