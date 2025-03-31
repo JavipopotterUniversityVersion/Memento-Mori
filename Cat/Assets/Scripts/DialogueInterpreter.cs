@@ -133,7 +133,9 @@ public class DialogueInterpreter : MonoBehaviour
             clausController.MoveEyes(int.Parse(arg));
         }
         else if(value == "pitch") audioHandler.OnSetPitch.Invoke(float.Parse(arg));
-        else if(value == "event") events[arg].Invoke();
+        else if(value == "event") {
+            if(events.ContainsKey(arg)) events[arg].Invoke();
+        }
         else if(value == "w") waitTime = float.Parse(arg);
         else if(value == "dialogue")
         {
