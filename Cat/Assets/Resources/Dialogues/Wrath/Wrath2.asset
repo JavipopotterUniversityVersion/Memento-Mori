@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27939074f0474c2419ef9e4e0de07290, type: 3}
   m_Name: Wrath2
   m_EditorClassIdentifier: 
-  _value: "<c:3>Hace una noche preciosa---\nHay tantas estrellas---\n<opt:No hay
-    ninguna estrella/follow>---\n<c:0>S\xED las hay pero no las vemos---\n<c:1>En
+  _value: "<c:3>Hace una noche preciosa---\n<f:Neutral>Hay tantas estrellas---\n<opt:No
+    hay ninguna estrella/follow>---\n<c:0>S\xED las hay pero no las vemos---\n<c:1>En
     realidad no, no las hay pero s\xED las vemos---\nMuchas de las estrellas que
     ves murieron hace millones de a\xF1os---\nPero estaban tan lejos que su luz a\xFAn
     nos llega---\n<c:2>Es como una imagen del pasado---\nUn recuerdo v\xEDvido de

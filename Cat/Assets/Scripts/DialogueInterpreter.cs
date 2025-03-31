@@ -29,15 +29,23 @@ public class DialogueInterpreter : MonoBehaviour
     [SerializeField] SerializableDictionary<string, UnityEvent> events;
     UnityEvent<string> onSendOptions = new UnityEvent<string>();
     public UnityEvent<string> OnSendOptions => onSendOptions;
-    bool _stop;
-
     string dialogueCache;
     [SerializeField] String[] dialogues;
     Dictionary<string, String> dialogueDictionary = new Dictionary<string, String>();
 
     Dictionary<string, bool> _localBools = new Dictionary<string, bool>();
 
+    bool _stop;
     public void Continue() => _stop = false;
+    public void Pause() => _stop = true;
+    public bool IsPaused() => _stop;
+
+    bool _skip = false;
+    public void SetSkip(bool skip) => _skip = skip;
+    public bool IsSkip() => _skip;
+
+    int _lineIndex = 0;
+    public void SetLineIndex(int index) => _lineIndex = index;
     
     private void Awake() {
         sceneLoader = GetComponent<SceneLoader>();
@@ -71,9 +79,9 @@ public class DialogueInterpreter : MonoBehaviour
         _lineRenderer.enabled = true;
         string[] lines = dialogue.Split($"---");
 
-        for(int c = 0; c < lines.Length; c++)
+        for(_lineIndex = 0; _lineIndex < lines.Length; _lineIndex++)
         {
-            string line = lines[c];
+            string line = lines[_lineIndex];
             _text.text = line.Trim();
             _text.maxVisibleCharacters = 0;
             float waitTime = timeBetweenLines;
@@ -94,12 +102,12 @@ public class DialogueInterpreter : MonoBehaviour
                     clausController.Talk();
                 }
 
-                if(Input.GetKey(KeyCode.Tab)) yield return null;
+                if(Input.GetKey(KeyCode.Tab) || _skip) yield return null;
                 else yield return new WaitForSeconds(timeBetweenChars);
             }
             clausController.StopTalking();
             yield return new WaitWhile(() => _stop);
-            if(Input.GetKey(KeyCode.Tab)) yield return null;
+            if(Input.GetKey(KeyCode.Tab) || _skip) yield return null;
             else yield return new WaitForSeconds(waitTime);
         }
 

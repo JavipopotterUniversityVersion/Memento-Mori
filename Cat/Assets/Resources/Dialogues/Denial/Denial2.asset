@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27939074f0474c2419ef9e4e0de07290, type: 3}
   m_Name: Denial2
   m_EditorClassIdentifier: 
-  _value: "<channel:1>---\nHace fr\xEDo, sientes la suave brisa del viento---\n<channel:0>---\nNo
-    se ve ni una estrella hoy---\n<c:2>Una pena, ser\xEDa muy rom\xE1ntico...---\n<opt:\xBFRom\xE1ntico?/follow>\nUh...---\n<c:3>No
+  _value: "<channel:1>---\nHace fr\xEDo, sientes la suave brisa del viento---\n<channel:0>---\n<c:2><f:Neutral>No
+    se ve ni una estrella hoy---\n<e:1>Una pena, ser\xEDa muy rom\xE1ntico...---\n<opt:\xBFRom\xE1ntico?/follow><e:0>Uh...---\n<c:3><f:Happy>No
     he dicho nada, olv\xEDdalo---\n<c:0>En realidad, quer\xEDa parar aqu\xED por
-    otro motivo...---\nNo es que quisiese mentirte, de verdad---\n<c:1>Simplemente
+    otro motivo...---\n<f:Neutral>No es que quisiese mentirte, de verdad---\n<c:1><f:Shame>Simplemente
     me daba verg\xFCenza---\nHay algo que tengo que decirte...---\n...---\n<w:3>---\nCierra
     los ojos, y no los abras por favor...---\n<event:close_eyes> <channel:1>---\nSientes
     como te entrega una carta en la mano<c:STAND><event:takePosition>---\n<channel:0>---\nLo

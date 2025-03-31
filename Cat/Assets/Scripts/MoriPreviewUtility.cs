@@ -88,8 +88,63 @@ public class MoriPreviewUtilityCustomInspector : Editor
         if(GUILayout.Button("Play: " + _selectedDialogue.name))
         {
             moriPreviewUtility.Interpreter.StopAllCoroutines();
+            moriPreviewUtility.Interpreter.Continue();
             moriPreviewUtility.Interpreter.StartDialogue(_selectedDialogue);
         }
+
+        GUILayout.Space(15);
+        GUILayout.Label("Controls", EditorStyles.boldLabel);
+
+        GUILayout.BeginHorizontal();
+        if(moriPreviewUtility.Interpreter.IsPaused())
+        {
+            if(GUILayout.Button("Resume")) moriPreviewUtility.Interpreter.Continue();
+        }
+        else
+        {
+            if(GUILayout.Button("Pause"))moriPreviewUtility.Interpreter.Pause();
+        }
+
+        if(moriPreviewUtility.Interpreter.IsSkip())
+        {
+            if(GUILayout.Button("Stop Skip")) moriPreviewUtility.Interpreter.SetSkip(false);
+        }
+        else
+        {
+            if(GUILayout.Button("Skip"))moriPreviewUtility.Interpreter.SetSkip(true);
+        }
+        GUILayout.EndHorizontal();
+
+        GUILayout.Space(20);
+        GUILayout.Label("Dialogue Lines", EditorStyles.boldLabel);
+
+        string[] selectedDialogueLines = _selectedDialogue.Value.Split("---", StringSplitOptions.RemoveEmptyEntries);
+
+        foreach(var line in selectedDialogueLines)
+        {
+            if(RemoveCommands(line, out string output) == false) continue;
+            if(GUILayout.Button(output))
+            {
+                moriPreviewUtility.Interpreter.StopAllCoroutines();
+                moriPreviewUtility.Interpreter.StartDialogue(_selectedDialogue);
+                moriPreviewUtility.Interpreter.SetLineIndex(Array.IndexOf(selectedDialogueLines, line));
+                moriPreviewUtility.Interpreter.Continue();
+            }
+        }
+    }
+
+    bool RemoveCommands(string input, out string output)
+    {
+        output = input;
+        if (input.Contains("<") && input.Contains(">"))
+        {
+            int startIndex = input.IndexOf("<");
+            int endIndex = input.IndexOf(">");
+            output = input.Remove(startIndex, endIndex - startIndex + 1);
+            RemoveCommands(output, out output);
+        }
+        if(string.IsNullOrWhiteSpace(output)) return false;
+        return true;
     }
 }
 #endif

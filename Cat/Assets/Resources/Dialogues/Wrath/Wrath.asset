@@ -18,7 +18,7 @@ MonoBehaviour:
     eres tan amable conmigo.---\nTe lo intentar\xE9 compensar.---\nLo siento por
     ser una molestia.---\n...---\n<w:4>---\nA\xFAn nos queda un buen rato de viaje---\n\xBFTe
     parece bien hacemos una parada para tomar el aire?---\n<opt:No/follow>---\n\xBFSeguro?<pitch:-1>---\nBueno,
-    lo que t\xFA digas<e:insane><pitch:-1.5> <w:0,5> <setMat:pixel/_PixelCount/128>---\nBueno,
+    lo que t\xFA digas<f:Insane><pitch:-1.5> <w:0,5> <setMat:pixel/_PixelCount/128>---\nBueno,
     lo que t\xFA digas<pitch:-2> <w:0,25> <w:0,5> <setMat:pixel/_PixelCount/64>---\nBueno,
     lo que t\xFA digas<pitch:-3> <w:0,125> <w:0,5> <setMat:pixel/_PixelCount/32>---\nBueno,
     lo que t\xFA digas<set:Parade=Wrath2> <pitch:1> <setMat:pixel/_PixelCount/256>
