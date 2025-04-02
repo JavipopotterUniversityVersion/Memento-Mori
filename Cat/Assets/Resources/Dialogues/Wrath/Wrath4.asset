@@ -14,6 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _value: '<channel:0><play:noise>---
 
-    <f:insane>NO...<w:5>---
-
-    <set:Parade=Bargaining><iload:CarStop>---'
+    <f:Insane><charTime:0,25>NO...---<charTime:0,035><set:Parade=Bargaining><iload:CarStop>'
