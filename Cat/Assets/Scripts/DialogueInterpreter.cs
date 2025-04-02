@@ -82,17 +82,18 @@ public class DialogueInterpreter : MonoBehaviour
         for(_lineIndex = index; _lineIndex < lines.Length; _lineIndex++)
         {
             string line = lines[_lineIndex];
-            _text.text = line.Trim();
+            string preProcessedLine = line.Trim();
             _text.maxVisibleCharacters = 0;
             float waitTime = timeBetweenLines;
+            _text.text = CleanTags(preProcessedLine);
 
-            for(int i = 0; i < _text.text.Length; i++)
+            for(int i = 0; i < preProcessedLine.Length; i++)
             {
                 _text.maxVisibleCharacters++;
 
-                if(_text.text[i] == '<'){
-                    string value = _text.text.Split("<")[1].Split(">")[0];
-                    _text.text = _text.text.Replace("<" + value + ">", "");
+                if(preProcessedLine[i] == '<'){
+                    string value = preProcessedLine.Split("<")[1].Split(">")[0];
+                    preProcessedLine = preProcessedLine.Replace("<" + value + ">", "");
                     i--;
 
                     ReadCommand(value, ref waitTime);
@@ -113,6 +114,22 @@ public class DialogueInterpreter : MonoBehaviour
 
          _text.maxVisibleCharacters = 0;
         _lineRenderer.enabled = false;
+    }
+
+    string CleanTags(string text)
+    {
+        string[] tags = text.Split("<");
+        string result = "";
+        for(int i = 0; i < tags.Length; i++)
+        {
+            if(tags[i].Contains(">"))
+            {
+                string value = tags[i].Split(">")[1];
+                result += value;
+            }
+            else result += tags[i];
+        }
+        return result;
     }
 
     public void ReadCommand(string command)
