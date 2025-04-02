@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27939074f0474c2419ef9e4e0de07290, type: 3}
   m_Name: Wrath2
   m_EditorClassIdentifier: 
-  _value: "<c:3>Hace una noche preciosa---\n<f:Neutral>Hay tantas estrellas---\n<opt:No
-    hay ninguna estrella/follow>---\n<c:0>S\xED las hay pero no las vemos---\n<c:1>En
-    realidad no, no las hay pero s\xED las vemos---\nMuchas de las estrellas que
-    ves murieron hace millones de a\xF1os---\nPero estaban tan lejos que su luz a\xFAn
-    nos llega---\n<c:2>Es como una imagen del pasado---\nUn recuerdo v\xEDvido de
-    tiempos anteriores---\n<opt:\xBFNo estabamos en el coche?/follow>---\n<c:side_eye>\xBFEh?
-    Claro, pero acordamos que parar\xEDamos aqu\xED---<c:1>\nEn realidad tengo algo
-    que decirte...<set:Drive=Wrath3> <iload:CarDrive>\n"
+  _value: "<c:2><e:0><f:Happy>Hace una noche preciosa---\n<e:1>Hay tantas estrellas---\n<opt:No
+    hay ninguna estrella/follow>---\n<c:0><e:0>S\xED las hay pero no las vemos---\n<c:1><f:Neutral>En
+    realidad no, no las hay pero s\xED las vemos---\n<c:0><f:Happy>Muchas de las
+    estrellas que ves murieron hace millones de a\xF1os---\nPero estaban tan lejos
+    que su luz a\xFAn nos llega---\n<c:2><f:Neutral>Es como una imagen del pasado---\nUn
+    recuerdo v\xEDvido de tiempos anteriores---\n<opt:\xBFNo estabamos en el coche?/follow>---\n\xBFEh?
+    Claro, pero<e:1> acordamos que parar\xEDamos aqu\xED---<c:1><f:Neutral><e:0>\nEn
+    realidad tengo algo que decirte...<f:Insane><set:Drive=Wrath3> <iload:CarDrive>\n"

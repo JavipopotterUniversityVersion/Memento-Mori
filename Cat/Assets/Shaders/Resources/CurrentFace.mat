@@ -66,7 +66,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Eyes:
-        m_Texture: {fileID: 2800000, guid: 3d05d00edc1ce5f458ef457370f7d489, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2649aec784365034fb64dc2605bedb2d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:

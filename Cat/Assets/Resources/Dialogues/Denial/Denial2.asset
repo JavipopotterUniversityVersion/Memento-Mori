@@ -15,8 +15,8 @@ MonoBehaviour:
   _value: "<channel:1>---\nHace fr\xEDo, sientes la suave brisa del viento---\n<channel:0>---\n<c:2><f:Neutral>No
     se ve ni una estrella hoy---\n<e:1>Una pena, ser\xEDa muy rom\xE1ntico...---\n<opt:\xBFRom\xE1ntico?/follow><e:0>Uh...---\n<c:3><f:Happy>No
     he dicho nada, olv\xEDdalo---\n<c:0>En realidad, quer\xEDa parar aqu\xED por
-    otro motivo...---\n<f:Neutral>No es que quisiese mentirte, de verdad---\n<c:1><f:Shame>Simplemente
-    me daba verg\xFCenza---\nHay algo que tengo que decirte...---\n...---\n<w:3>---\nCierra
+    otro motivo...---\n<f:Neutral><c:1>No es que quisiese mentirte, de verdad---\n<e:1><f:Shame>Simplemente
+    me daba verg\xFCenza---\nHay algo que tengo que decirte...---\n...---\n<w:3>---\n<e:0><f:Neutral>Cierra
     los ojos, y no los abras por favor...---\n<event:close_eyes> <channel:1>---\nSientes
     como te entrega una carta en la mano<c:STAND><event:takePosition>---\n<channel:0>---\nLo
     siento...<event:open_eyes> <pitch:-1>---\nTe ment\xED...<w:2>---\nGracias por

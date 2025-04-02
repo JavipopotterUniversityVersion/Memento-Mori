@@ -11,15 +11,15 @@ public class TextPositionFixer : MonoBehaviour
     [SerializeField] Vector2 margin = new Vector2(85, 230);
 
     [SerializeField] Camera cam;
-    [SerializeField] LineRenderer _lineRenderer;
+    // [SerializeField] LineRenderer _lineRenderer;
 
     private void Start() {
-        _lineRenderer.positionCount = 2;
+        // _lineRenderer.positionCount = 2;
     }
 
     void Update()
     {
-        _lineRenderer.SetPosition(0, _origin.position);
+        // _lineRenderer.SetPosition(0, _origin.position);
 
         Vector2 screenSize = new Vector2(Screen.width, Screen.height);
         Vector2 screenPos = cam.WorldToViewportPoint(_origin.position);
@@ -39,6 +39,6 @@ public class TextPositionFixer : MonoBehaviour
 
         _text.rectTransform.localPosition = newPos;
         Vector3 destination = cam.ScreenToWorldPoint(new Vector3(newPos.x, newPos.y - _text.rectTransform.rect.height/2, 0));
-        _lineRenderer.SetPosition(1, destination);
+        // _lineRenderer.SetPosition(1, destination);
     }
 }

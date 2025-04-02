@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27939074f0474c2419ef9e4e0de07290, type: 3}
   m_Name: Wrath4
   m_EditorClassIdentifier: 
-  _value: '<channel:1><play:noise>---
+  _value: '<channel:0><play:noise>---
 
     <f:insane>NO...<w:5>---
 

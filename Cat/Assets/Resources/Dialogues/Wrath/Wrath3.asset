@@ -12,19 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27939074f0474c2419ef9e4e0de07290, type: 3}
   m_Name: Wrath3
   m_EditorClassIdentifier: 
-  _value: "<c:1> <event:silence>\xBFTe culpas a ti mismo por cosas fuera de tu control?---\n...---\nOye,
-    no me estabas escuchando <event:unSilence>---\n\xBFEst\xE1s bien?---\n\xBFSeguro
-    que no quieres parar? <opt:Est\xE1bamos fuera/follow>---\n\xBFQu\xE9? No hemos
-    parado en ning\xFAn momento---\n<c:3> Est\xE1s perdiendo la cabeza igual que
-    yo jejejsj---\n<opt:\xBFIgual que t\xFA?/follow>---\n<c:3>Es broma idiota---\n<c:0>
-    <w:3>---\n<c:2> Entonces...<w:2>---\n\xBFTe culpas a ti mismo por cosas fuera
-    de tu control?<opt:\xBFA qu\xE9 te refieres?/follow>---\nEs que el otro d\xEDa
-    vi como atropellaban a una liebre---\nFue muy r\xE1pido pero no pude evitar sentir
-    que pude hacer algo---\n\xBFY si hubiese llegado antes para apartarla de la carretera?---\nEn
-    realidad s\xE9 que no es mi culpa---\nPero no puedo evitar sentirme mal---\nPor
-    eso te preguntaba---\n\xBFEs normal sentirse as\xED? <opt:Yo tambi\xE9n me siento
-    as\xED a veces/follow, No le suelo dar vueltas/follow>---\nYa veo...---\nCreo
-    que suelo asumir la culpa de todo lo malo que me rodea---\n...---\n<w:3>---\n<c:0>Estoy
-    algo cansada---\n\xBFPodr\xEDamos parar por aqu\xED?---\nNecesito tomar un poco
-    el aire---\n<opt:\xBFTengo opci\xF3n?/follow>---\nEhm... Claro, no hace falta
-    que paremos<iload:Void><event:silence> si no quieres---"
+  _value: "<c:1><e:0><f:Neutral><event:silence>\xBFTe culpas a ti mismo por cosas
+    fuera de tu control?---\n...---\n<f:Angry>Oye, no me estabas escuchando<event:unSilence>---\n<f:Neutral><c:0>\xBFEst\xE1s
+    bien?---\n<c:0>\xBFSeguro que no quieres parar? <opt:Est\xE1bamos fuera/follow>---\n<c:3>\xBFQu\xE9?
+    No hemos parado en ning\xFAn momento---\n<f:Happy>Est\xE1s perdiendo la cabeza
+    igual que yo jejejsj---\n<opt:\xBFIgual que t\xFA?/follow>---\n<c:3><f:Confident>Es
+    broma idiota---\n<c:2><f:Happy><w:3>---\n<e:1>Entonces...<w:2>---\n<c:3><e:0><f:Neutral>\xBFTe
+    culpas a ti mismo por cosas fuera de tu control?<opt:\xBFA qu\xE9 te refieres?/follow>---\nCreo
+    que suelo asumir la culpa de todo lo malo que me rodea---\n<w:3><e:1>---\n<c:2><e:0>Estoy
+    algo cansada---\n<c:1>\xBFPodr\xEDamos parar por aqu\xED?---\n<e:1>Necesito tomar
+    un poco el aire---\n<opt:\xBFTengo opci\xF3n?/follow>---\n<e:0><c:3>Ehm... Claro,
+    no hace falta que paremos<iload:Void><event:silence> si no quieres---"

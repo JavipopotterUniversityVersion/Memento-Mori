@@ -18,5 +18,5 @@ MonoBehaviour:
 
     <charTime:0,1><setBool:Completed/true>---
 
-    MEMENTO
-    MORI<w:5><load:MainMenu>---'
+    <w:5>MEMENTO
+    MORI<load:MainMenu>---'

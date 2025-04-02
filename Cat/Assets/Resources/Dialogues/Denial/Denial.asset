@@ -25,15 +25,15 @@ MonoBehaviour:
     has dado cuenta de que las personas mentimos constantemente?---\nYa no me refiero
     a solo mentir al resto.---\nConstantemente nos mentimos a nosotros mismos.---\nPara
     no afrontar la dolorosa verdad.---\n<e:0>Crees que mentir est\xE1 bien para evadir
-    el dolor.---\n<opt:Si/follow,No/follow>---\n<e:1>Ya veo...<w:2>---\n<e:0><f:Happy>Perdona,
+    el dolor.---\n<opt:Si/follow,No/follow>---\n<e:1>Ya veo...<w:2>---\n<e:0>Perdona,
     me he ido por las ramas y me he puesto a hablar de tonter\xEDas que no vienen
     a cuento.---\n<c:SIDE><w:5>---\n<e:1>En realidad parece algo bastante natural
     \xBFno?---\nTenemos miedo al sufrimiento por eso queremos negar el dolor.---\n<c:0><e:0>Por
     eso no creo que pueda juzgar a nadie por mentir, mucho menos a ti.\n<opt:\xBFQu\xE9
     insinuas?/follow,\xBFCrees que miento?/follow>---\n<e:0><f:Neutral>S\xE9 que
-    mientes.---\nQuiz\xE1s te lo quieres negar, pero mientes.---\n<w:2>---\n<e:1>Perd\xF3n,
-    eso ha sido desagradable de mi parte.---\n<c:SIDE><e:0>Mejor dejemos el tema.---\n<w:4>---\n<e:0><c:0>Oye...---\n<f:Happy>\xBFTe
-    parece bien si paramos un segundo por aqu\xED?---\nNecesito tomar un poco el
-    aire.---\n<f:Neutral>Y a\xFAn nos queda un buen rato.---\n<opt:Me parece bien/follow,Creo
-    que yo tambi\xE9n lo necesito/follow>---\n<f:Happy>Genial, pues paremos por aqu\xED
-    mismo---\n<w:2>---\n<set:Parade=Denial2><load:CarStop>"
+    mientes.---\nQuiz\xE1s te lo quieres negar, pero mientes.---\n<w:2>---\n<e:1><f:Shame>Perd\xF3n,
+    eso ha sido desagradable de mi parte.---\n<f:Neutral><c:SIDE><e:0>Mejor dejemos
+    el tema.---\n<w:4>---\n<e:0><c:0>Oye...---\n<f:Happy>\xBFTe parece bien si paramos
+    un segundo por aqu\xED?---\nNecesito tomar un poco el aire.---\n<f:Neutral>Y
+    a\xFAn nos queda un buen rato.---\n<opt:Me parece bien/follow,Creo que yo tambi\xE9n
+    lo necesito/follow>---\n<f:Happy>Genial, pues paremos por aqu\xED mismo---\n<w:2>---\n<set:Parade=Denial2><load:CarStop>"
