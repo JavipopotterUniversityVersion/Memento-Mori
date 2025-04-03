@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public class MenuHandler : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class MenuHandler : MonoBehaviour
     [SerializeField] UnityEvent _onIsPaused;
 
     private void Update() {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape) && EventSystem.current.enabled)
         {
             Pause(!paused);
         }

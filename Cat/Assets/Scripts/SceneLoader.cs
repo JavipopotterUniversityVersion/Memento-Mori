@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -26,6 +27,8 @@ public class SceneLoader : MonoBehaviour
 
     IEnumerator LoadSceneRoutine(string scene, UnityAction action = null)
     {
+        EventSystem.current.enabled = false;
+
         for(float i = 0; i < 1; i += 0.01f)
         {
             _fadeImage.color = new Color(_fadeImage.color.r, _fadeImage.color.g, _fadeImage.color.b, i);

@@ -66,7 +66,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Eyes:
-        m_Texture: {fileID: 2800000, guid: eb70a16395bb8dd4593e36ffefc9cd72, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2649aec784365034fb64dc2605bedb2d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -90,7 +90,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Pupils:
-        m_Texture: {fileID: 2800000, guid: c8012e361d69285429feac027bc1ed64, type: 3}
+        m_Texture: {fileID: 2800000, guid: b24e7fd19725fa64a975aab3cde608fb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_1dbccca626b14198a1f07ee4b715abc1_Texture_1_Texture2D:
@@ -159,6 +159,7 @@ Material:
     - _Center: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Eyecolor: {r: 0, g: 0, b: 0, a: 1}
     - _LPOffset: {r: 1.42, g: 0, b: 0, a: 0}
     - _RPOffset: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}

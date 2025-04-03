@@ -12,17 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27939074f0474c2419ef9e4e0de07290, type: 3}
   m_Name: Bargaining
   m_EditorClassIdentifier: 
-  _value: "<setMatColor:pixel/_Filter/yellow> <channel:1>---\nHace fr\xEDo, sientes
-    la suave brisa del viento---\n<channel:0>---\n<c:2>Hace fr\xEDo---\n<c:side_eye>Supongo
+  _value: "<setMatColor:pixel/_Filter/yellow><f:Happy><channel:1>---\nHace fr\xEDo,
+    sientes la suave brisa del viento---\n<channel:0>---\n<c:2>Hace fr\xEDo---\n<c:side_eye>Supongo
     que es lo normal en Noviembre---\n<c:0>Me siento mucho mejor ahora---\nGracias
-    por parar, realmente lo necesitaba---\n<c:1>\xBFUh? \xBFEst\xE1s bien?---\nParece
-    que has visto un fantasma---\n<opt:No entiendo nada/follow>---\nLlevas comport\xE1ndote
-    de forma rara un buen rato---\nEn fin---\n...---\n<w:3>---\n<c:0>En realidad,
-    quer\xEDa parar aqu\xED por otro motivo...---\nNo es que quisiese mentirte, de
-    verdad---\n<c:1>Simplemente me daba verg\xFCenza---\nHay algo que tengo que decirte...---\n<opt:Basta/follow>---\n\xBFEh?---\n\xBFPerd\xF3n
-    he dicho algo raro?---\n<opt:No lo hagas/follow>---\n\xBFA qu\xE9 te refieres?---\nBueno,
+    por parar, realmente lo necesitaba---\n<c:3><f:Neutral>\xBFUh? \xBFEst\xE1s bien?---\n<f:Happy>Parece
+    que has visto un fantasma---\n<opt:No entiendo nada/follow>---\n<f:Neutral>Llevas
+    comport\xE1ndote de forma rara un buen rato---\n<f:Happy>En fin---\n<e:1><c:1><w:3>---\n<c:3><f:Shame><e:0>En
+    realidad, quer\xEDa parar aqu\xED por otro motivo...---\n<f:Happy><e:0>No es
+    que quisiese mentirte, de verdad---\n<c:1><e:1><f:Shame>Simplemente me daba verg\xFCenza---\nHay
+    algo que tengo que decirte...---\n<opt:Basta/follow>---\n<e:0><f:Neutral><c:3>\xBFEh?---\n\xBFPerd\xF3n
+    he dicho algo raro?---\n<opt:No lo hagas/follow>---\n\xBFA qu\xE9 te refieres?---\n<c:0><f:Happy>Bueno,
     cierra los ojos---\n<opt:No/follow><event:close_eyes><channel:1>---\nNo puedes
-    evitar cerrar los ojos...---\nSientes como te entrega una carta en la mano<c:stand><event:takePosition>---\n<channel:0>---\nLo
+    evitar cerrar los ojos...---\nSientes como te entrega una carta en la mano<c:stand><event:takePosition><c:6>---\n<channel:0>---\n<f:Neutral>Lo
     siento...<event:open_eyes> <pitch:-1>---\nTe ment\xED...<w:2>---\n<opt:No te
-    vayas/follow>---\nYa es muy tarde---\nNo es algo que puedas negociar---\nGracias
-    por todo...<event:mori><set:Drive=Depression>---\n<iload:CarDrive>---"
+    vayas/follow>---\nYa es muy tarde---\n<e:1>No es algo que puedas negociar---\n<e:0>Gracias
+    por todo...<c:7><set:Drive=Depression>---\n<iload:CarDrive>---"

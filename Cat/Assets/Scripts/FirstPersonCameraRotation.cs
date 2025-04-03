@@ -28,7 +28,9 @@ public class FirstPersonCameraRotation : MonoBehaviour {
 	bool isPaused = false;
 
 	void Update(){
-		if(Input.GetKeyDown(KeyCode.T) ||Input.GetKeyDown(KeyCode.Escape)) {
+
+		#if UNITY_EDITOR
+		if(Input.GetKeyDown(KeyCode.Escape)) {
 			isPaused = true;
 		}
 
@@ -47,6 +49,8 @@ public class FirstPersonCameraRotation : MonoBehaviour {
 			Cursor.lockState = CursorLockMode.Locked;
 			Cursor.visible = false;
 		}
+		#endif
+
 
 		rotation.x += Input.GetAxis(xAxis) * sensitivity;
 		rotation.y += Input.GetAxis(yAxis) * sensitivity;
