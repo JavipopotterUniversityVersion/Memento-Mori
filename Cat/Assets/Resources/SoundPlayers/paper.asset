@@ -9,7 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bde49c8c4ac08ba4296bf35bcfc755cc, type: 3}
-  m_Name: Parade
+  m_Script: {fileID: 11500000, guid: b57c8e60ee890ed4ea19cb9657a9175a, type: 3}
+  m_Name: paper
   m_EditorClassIdentifier: 
-  _value: {fileID: 11400000, guid: 2431fa5ce95d6ef4f90ff741a01f1952, type: 2}
+  clips:
+  - {fileID: 8300000, guid: c7b83238a42c1c54f9f5fdace9dd8624, type: 3}
+  _localVolume: 1
+  pitch: {x: 1, y: 1}
+  playIndex: 0
+  playOrder: 0
+  _loop: 0
+  audioType: 0
+  _simultaneousSounds: 3

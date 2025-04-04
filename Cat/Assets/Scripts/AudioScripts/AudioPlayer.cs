@@ -8,8 +8,9 @@ public class AudioPlayer : ScriptableObject
     [Range(0,1)] public float _localVolume = 1;
     public float LocalVolume => _localVolume;
 
+    [HideInInspector] float _pitchCenter = 1;
     public Vector2 pitch = new Vector2(1f, 1f);
-    public float Pitch => Random.Range(pitch.x, pitch.y);
+    public float Pitch => _pitchCenter + Random.Range(pitch.x, pitch.y) - 1;
 
     [SerializeField] int playIndex;
     [SerializeField] private SoundClipOrder playOrder;
@@ -78,6 +79,7 @@ public class AudioPlayer : ScriptableObject
     }
 
     public void SetPitch(float pitch) => _onPitchSet?.Invoke(pitch);
+    public void SetPitchCenter(float pitchCenter) => _pitchCenter = pitchCenter;
     public void SetVolume(float volume) => _onVolumeSet?.Invoke(volume);
 
     public void Stop() => _onAudioStop?.Invoke();

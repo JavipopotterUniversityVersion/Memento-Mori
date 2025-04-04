@@ -167,6 +167,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3661798848521015885, guid: 137a8dc8a5405b14c89024460eba6172, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 3661798848521015885, guid: 137a8dc8a5405b14c89024460eba6172, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 367
+      objectReference: {fileID: 0}
     - target: {fileID: 6965766201203504900, guid: 137a8dc8a5405b14c89024460eba6172, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -423,13 +431,13 @@ MonoBehaviour:
   _onStart:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 1029719db1797ac43a9e71cd54b4c821, type: 2}
-        m_TargetAssemblyTypeName: SimpleAudioManagerHandler, Assembly-CSharp
-        m_MethodName: PlaySong
+      - m_Target: {fileID: 11400000, guid: 34e24f760653faa4bb2ca74b0d178c62, type: 2}
+        m_TargetAssemblyTypeName: AudioChannel, Assembly-CSharp
+        m_MethodName: Play
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: dd8533bd8431d4b4d9221dd25be6cc59, type: 2}
-          m_ObjectArgumentAssemblyTypeName: SimpleAudioManager.Song, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: 54f17bbc86d1810418975429570475c1, type: 2}
+          m_ObjectArgumentAssemblyTypeName: AudioPlayer, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

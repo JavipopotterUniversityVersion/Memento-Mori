@@ -22,7 +22,7 @@ public class DialogueInterpreter : MonoBehaviour
     SceneLoader sceneLoader;
     [SerializeField] ClausController clausController;
 
-    [SerializeField] SimpleAudioManagerHandler audioHandler;
+    [SerializeField] AudioChannel musicChannel;
     [SerializeField] SerializableDictionary<string, Material> materials;
     [SerializeField] SerializableDictionary<string, Color> colors;
 
@@ -157,7 +157,13 @@ public class DialogueInterpreter : MonoBehaviour
         {
             clausController.MoveEyes(int.Parse(arg));
         }
-        else if(value == "pitch") audioHandler.OnSetPitch.Invoke(float.Parse(arg));
+        else if(value == "pitch") {
+            if(arg.Contains("/")){
+                AudioPlayer audio = Resources.Load<AudioPlayer>("SoundPlayers/" + arg.Split("/")[0]);
+                float pitch = float.Parse(arg.Split("/")[1]);
+                audio.SetPitchCenter(pitch);
+            } else musicChannel.SetPitch(float.Parse(arg));
+        }
         else if(value == "event") {
             if(events.ContainsKey(arg)) events[arg].Invoke();
         }

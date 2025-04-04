@@ -723,7 +723,7 @@ MonoBehaviour:
         m_CallState: 2
   volume: {fileID: 0}
   clausController: {fileID: 0}
-  audioHandler: {fileID: 11400000, guid: 1029719db1797ac43a9e71cd54b4c821, type: 2}
+  musicChannel: {fileID: 11400000, guid: 34e24f760653faa4bb2ca74b0d178c62, type: 2}
   materials:
     list:
     - Key: pixel

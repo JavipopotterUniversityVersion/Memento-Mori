@@ -7,9 +7,13 @@ using UnityEngine.Serialization;
 public class AudioChannel : ScriptableObject
 {
     [SerializeField] AudioPlayer _currentAudio;
-
     [SerializeField] float fadeTime = 0.5f;
     public void SetFadeTime(float time) => fadeTime = time;
+
+    public void SetPitch(float pitch)
+    {
+        if(_currentAudio != null) _currentAudio.SetPitch(pitch);
+    }
 
     public void Play(AudioPlayer audio)
     {
