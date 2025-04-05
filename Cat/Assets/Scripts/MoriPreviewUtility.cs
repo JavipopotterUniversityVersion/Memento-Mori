@@ -11,7 +11,7 @@ public class MoriPreviewUtility : MonoBehaviour
     [HideInInspector] FacePreset[] _facePresets;
     public void SetFacePresetsArray(FacePreset[] facePresets) => _facePresets = facePresets;
     public FacePreset[] GetFacePresetsArray() => _facePresets;
-    public String[] dialogues;
+    public DialoguesArray dialoguesArray;
     [SerializeField] DialogueInterpreter _interpreter;
     public DialogueInterpreter Interpreter => _interpreter;
 
@@ -50,7 +50,7 @@ public class MoriPreviewUtilityCustomInspector : Editor
         GUILayout.Space(10);
         GUILayout.Label("Dialogues", EditorStyles.boldLabel);
 
-        foreach(var dialogue in moriPreviewUtility.dialogues)
+        foreach(var dialogue in moriPreviewUtility.dialoguesArray.dialogues)
         {
             if (GUILayout.Button(dialogue.name))
             {

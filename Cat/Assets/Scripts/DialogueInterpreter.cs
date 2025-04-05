@@ -30,7 +30,7 @@ public class DialogueInterpreter : MonoBehaviour
     UnityEvent<string> onSendOptions = new UnityEvent<string>();
     public UnityEvent<string> OnSendOptions => onSendOptions;
     string dialogueCache;
-    [SerializeField] String[] dialogues;
+    [SerializeField] DialoguesArray _dialoguesArray;
     Dictionary<string, String> dialogueDictionary = new Dictionary<string, String>();
 
     Dictionary<string, bool> _localBools = new Dictionary<string, bool>();
@@ -48,7 +48,7 @@ public class DialogueInterpreter : MonoBehaviour
     
     private void Awake() {
         sceneLoader = GetComponent<SceneLoader>();
-        foreach(var dialogue in dialogues) dialogueDictionary.Add(dialogue.name, dialogue);
+        foreach(var dialogue in _dialoguesArray.dialogues) dialogueDictionary.Add(dialogue.name, dialogue);
     }
 
     private void Update() {
