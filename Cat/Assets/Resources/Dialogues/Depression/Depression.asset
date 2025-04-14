@@ -12,9 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27939074f0474c2419ef9e4e0de07290, type: 3}
   m_Name: Depression
   m_EditorClassIdentifier: 
-  _value: "<c:DEPRESSED><setMatColor:pixel/_Filter/blue><f:Neutral>---\n...<w:4>---\n<opt:\xBFEst\xE1s
-    bien?/follow>---\n...<w:4>---\n<opt:\xBFHola?/follow>---\n<w:2>---\n<charTime:0,1>Todo
-    siempre se derrumba...---\n<w:2>---\nNo existe futuro para m\xED...---\n<opt:No
-    es verdad/follow><charTime:0,035>---\n<c:2><e:1>No sabes nada sobre m\xED.---\nNo
-    tienes ni idea.---\n<e:0><c:2><w:4>---\nLo siento, no mereces cargar con esto.---\nMereces
-    ser libre.---\n<c:0>Gracias por recordarme.---\nAdi\xF3s<set:Drive=Acceptance>---\n<opt:Espera/follow><iload:CarDrive>---"
+  _value: "<c:DEPRESSED><setMatColor:pixel/_Filter/blue><f:Neutral>---\r\n...<w:4>---\r\n<opt:\xBFEst\xE1s
+    bien?/follow>---\r\n...<w:4>---\r\n<opt:\xBFHola?/follow>---\r\n<w:2>---\r\n<charTime:0,1>Todo
+    siempre se derrumba...---\r\n<w:2>---\r\nNo existe futuro para m\xED...---\r\n<opt:No
+    es verdad/follow><charTime:0,035>---\r\n<c:2><e:1>No sabes nada sobre m\xED.---\r\nNo
+    tienes ni idea.---\r\n<e:0><c:2><w:4>---\r\nLo siento, no mereces cargar con
+    esto.---\r\nMereces ser libre.---\nAs\xED es como deber\xEDan ser las cosas---\r\n<c:0>Gracias
+    por recordarme.---\r\nAdi\xF3s<set:Drive=Acceptance>---\r\n<opt:Espera/follow><iload:CarDrive>---"
+  _translationsArray:
+  - "<c:DEPRESSED><setMatColor:pixel/_Filter/blue><f:Neutral>---\r\n...<w:4>---\r\n<opt:Are
+    you okay?/follow>---\r\n...<w:4>---\r\n<opt:Hello?/follow>---\r\n<w:2>---\r\n<charTime:0,1>Everything
+    always falls apart...---\r\n<w:2>---\r\nThere\u2019s no future for me...---\r\n<opt:That\u2019s
+    not true/follow><charTime:0,035>---\r\n<c:2><e:1>You don\u2019t know anything
+    about me.---\r\nYou have no idea.---\r\n<e:0><c:2><w:4>---\r\nI\u2019m sorry,
+    you don\u2019t deserve to carry this.---\r\nYou deserve to be free.---\nThat's
+    how things should be---\r\n<c:0>Thank you for remembering me.---\r\nGoodbye<set:Drive=Acceptance>---\r\n<opt:Wait/follow><iload:CarDrive>---\r\n"
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 

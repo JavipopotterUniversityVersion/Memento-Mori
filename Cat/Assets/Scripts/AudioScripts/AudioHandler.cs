@@ -20,6 +20,8 @@ public class AudioHandler : MonoBehaviour
         _audioPlayer.OnAudioStop.AddListener(Stop);
         _audioPlayer.OnFadeIn.AddListener(FadeIn);
         _audioPlayer.OnFadeOut.AddListener(FadeOut);
+        _audioPlayer.OnPause.AddListener(Pause);
+        _audioPlayer.OnResume.AddListener(UnPause);
         _source.loop = _audioPlayer.Loop;
         _localVolume = _audioPlayer.LocalVolume;
         _source.volume = _localVolume;

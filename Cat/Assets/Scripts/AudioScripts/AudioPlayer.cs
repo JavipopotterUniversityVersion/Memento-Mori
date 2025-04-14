@@ -42,6 +42,12 @@ public class AudioPlayer : ScriptableObject
 
     private UnityEvent<float> _onFadeOut = new UnityEvent<float>();
     public UnityEvent<float> OnFadeOut => _onFadeOut;
+
+    private UnityEvent _onPause = new UnityEvent();
+    public UnityEvent OnPause => _onPause;
+
+    private UnityEvent _onResume = new UnityEvent();
+    public UnityEvent OnResume => _onResume;
     #endregion
 
     public AudioClip audioClip()
@@ -86,6 +92,9 @@ public class AudioPlayer : ScriptableObject
 
     public void FadeOut(float time) => _onFadeOut?.Invoke(time);
     public void FadeIn(float time) => _onFadeIn?.Invoke(time);
+
+    public void Pause() => _onPause?.Invoke();
+    public void Resume() => _onResume?.Invoke();
 
     enum SoundClipOrder
     {

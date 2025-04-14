@@ -37,3 +37,37 @@ MonoBehaviour:
     un segundo por aqu\xED?---\nNecesito tomar un poco el aire.---\n<f:Neutral>Y
     a\xFAn nos queda un buen rato.---\n<opt:Me parece bien/follow,Creo que yo tambi\xE9n
     lo necesito/follow>---\n<f:Happy>Genial, pues paremos por aqu\xED mismo---\n<w:2>---\n<set:Parade=Denial2><load:CarStop>"
+  _translationsArray:
+  - "<w:3><setMatColor:pixel/_Filter/white>---\r\n<e:0><f:Happy>Listen...---\r\n<c:1>Imagine
+    this conjoined twins.---\r\nThey share a body and all that stuff.---\r\n<c:0>What
+    happens if one of them dies?---\r\nDo they both die? Or just one of them?---\r\n<c:1>If
+    only one dies, that\u2019s pretty messed up, isn\u2019t it?---\r\n<c:0>The other
+    one would have to carry their sibling\u2019s corpse\r\nfor the rest of their
+    life... <w:3>---\r\n<c:3>That\u2019s scary, isn\u2019t it?---\r\n<c:0>Good thing
+    I\u2019m not a conjoined twin.---\r\n<w:5>---\r\n<c:2><e:1>There\u2019s a full
+    moon...---\r\n<c:3>It\u2019s actually a really beautiful night.---\r\n<c:1><e:0>Hey,
+    I haven\u2019t thanked you yet for walking me home.---\r\nI don\u2019t understand
+    why you\u2019re so nice to me.---\r\n<e:1>I\u2019ll try to make it up to you.---\r\n<e:0>Sorry
+    for being a bother<opt:You're not a bother/follow,It's nothing/follow>---\r\n...<w:2>---\r\n<e:1><f:Neutral>Have
+    you realized that people lie all the time?---\r\nI\u2019m not just talking about
+    lying to others.---\r\nWe constantly lie to ourselves.---\r\nTo avoid facing
+    the painful truth.---\r\n<e:0>You think it\u2019s okay to lie to avoid pain.---\r\n<opt:Yes/follow,No/follow>---\r\n<e:1>I
+    see...<w:2>---\r\n<e:0>Sorry, I got carried away and started rambling about things
+    that don\u2019t matter.---\r\n<c:SIDE><w:5>---\r\n<e:1>But it kind of seems natural,
+    doesn\u2019t it?---\r\nWe\u2019re afraid of suffering, so we want to deny pain.---\r\n<c:0><e:0>That\u2019s
+    why I don\u2019t think I can judge anyone for lying, especially not you.\r\n<opt:What
+    are you implying?/follow,Do you think I lie?/follow>---\r\n<e:0><f:Neutral>I
+    know you lie.---\r\nMaybe you want to deny it, but you lie.---\r\n<w:2>---\r\n<e:1><f:Shame>Sorry,
+    that was rude of me.---\r\n<f:Neutral><c:SIDE><e:0>Let\u2019s just drop the subject.---\r\n<w:4>---\r\n<e:0><c:0>Hey...---\r\n<f:Happy>Would
+    you mind if we stop here for a second?---\r\nI need to get some fresh air.---\r\n<f:Neutral>And
+    we still have a long way to go.---\r\n<opt:That\u2019s fine/follow,I think I
+    need it too/follow>---\r\n<f:Happy>Great, let\u2019s stop right here then---\r\n<w:2>---\r\n<set:Parade=Denial2><load:CarStop>\r\n"
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 

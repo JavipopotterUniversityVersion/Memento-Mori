@@ -55,7 +55,7 @@ public class SceneLoader : MonoBehaviour
     public void Fade() => StartCoroutine(FadeRoutine());
     public void Silence() => AudioPerformer.Instance.StopAll();
     
-    IEnumerator FadeRoutine()
+    IEnumerator FadeRoutine(UnityAction callback = null)
     {
         for(float i = 0; i < 1; i += Time.deltaTime)
         {
@@ -63,5 +63,14 @@ public class SceneLoader : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         _fadeImage.color = new Color(_fadeImage.color.r, _fadeImage.color.g, _fadeImage.color.b, 1);
+        callback?.Invoke();
+    }
+
+    public void Quit()
+    {
+        StartCoroutine(FadeRoutine(Application.Quit));
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
     }
 }

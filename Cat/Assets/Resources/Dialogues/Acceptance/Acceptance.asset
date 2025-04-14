@@ -20,3 +20,21 @@ MonoBehaviour:
 
     <w:5>MEMENTO
     MORI<load:MainMenu>---'
+  _translationsArray:
+  - '<setMatColor:pixel/_Filter/white>---<event:bye_mori><channel:1>---
+
+    <w:2>---
+
+    <charTime:0,1><setBool:Completed/true>---
+
+    <w:5>MEMENTO
+    MORI<load:MainMenu>---'
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 

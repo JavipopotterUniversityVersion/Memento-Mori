@@ -24,3 +24,25 @@ MonoBehaviour:
     lo que t\xFA digas<pitch:-0.2><pitch:Beep/0,5><w:0,125><setMat:pixel/_PixelCount/32>---\n<charTime:0,1>Bueno,
     lo que t\xFA digas<set:Parade=Wrath2><charTime:0,035><pitch:Beep/1><pitch:1>
     <setMat:pixel/_PixelCount/256><iload:CarStop>---"
+  _translationsArray:
+  - "<setMatColor:pixel/_Filter/red><c:0><f:Neutral>Hello?---\r\nAre you okay?---\r\n<f:Happy>Were
+    you dissociating? Hehe---\r\nWhat were you thinking about?---\r\n<opt:Nothing
+    in particular/follow>---\r\n<f:Neutral>No?---\r\nWell...---\r\n<c:2><w:3>---\r\n<c:1><f:Happy>Hey,
+    I haven\u2019t thanked you yet for walking me home.---\r\n<f:Neutral>I don\u2019t
+    understand why you\u2019re so kind to me.---\r\n<f:Happy>I\u2019ll try to make
+    it up to you.---\r\n<f:Neutral>Sorry for being a bother.---\r\n...---\r\n<c:2><w:4>---\r\n<c:0>We
+    still have a long way to go---\r\nWould you mind if we stopped for a bit to get
+    some fresh air?---\r\n<opt:No/follow>---\r\nAre you sure?<pitch:-1>---\r\nWell,
+    if you say so<f:Insane><pitch:-1.5><pitch:Beep/2><w:0,5> <setMat:pixel/_PixelCount/128>---\r\nWell,
+    if you say so<pitch:-0.5><pitch:Beep/1,5><w:0,25><setMat:pixel/_PixelCount/64>---\r\nWell,
+    if you say so<pitch:-0.2><pitch:Beep/0,5><w:0,125><setMat:pixel/_PixelCount/32>---\r\n<charTime:0,1>Well,
+    if you say so<set:Parade=Wrath2><charTime:0,035><pitch:Beep/1><pitch:1> <setMat:pixel/_PixelCount/256><iload:CarStop>---\r\n"
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 

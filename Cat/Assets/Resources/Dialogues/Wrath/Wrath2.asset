@@ -17,6 +17,25 @@ MonoBehaviour:
     realidad no, no las hay pero s\xED las vemos---\n<c:0><f:Happy>Muchas de las
     estrellas que ves murieron hace millones de a\xF1os---\nPero estaban tan lejos
     que su luz a\xFAn nos llega---\n<c:2><f:Neutral>Es como una imagen del pasado---\nUn
-    recuerdo v\xEDvido de tiempos anteriores---\n<opt:\xBFNo estabamos en el coche?/follow>---\n\xBFEh?
+    recuerdo v\xEDvido de tiempos anteriores--- \n<opt:\xBFNo estabamos en el coche?/follow>---\n\xBFEh?
     Claro, pero<e:1> acordamos que parar\xEDamos aqu\xED---<c:1><f:Neutral><e:0>\nEn
     realidad tengo algo que decirte...<f:Insane><set:Drive=Wrath3> <iload:CarDrive>\n"
+  _translationsArray:
+  - "<c:2><e:0><f:Happy>It\u2019s a beautiful night---\r\n<e:1>There are so many
+    stars---\r\n<opt:There aren't any stars/follow>---\r\n<c:0><e:0>Yes, there are,
+    we just can\u2019t see them---\r\n<c:1><f:Neutral>Actually no, there aren\u2019t
+    any, but we still see them---\r\n<c:0><f:Happy>Many of the stars you see died
+    millions of years ago---\r\nBut they were so far away that their light is still
+    reaching us---\r\n<c:2><f:Neutral>It\u2019s like an image from the past---\r\nA
+    vivid memory from long ago---\r\n<opt:Weren\u2019t we in the car?/follow>---\r\nHuh?
+    Of course, but<e:1> we agreed we\u2019d stop here---<c:1><f:Neutral><e:0>\r\nActually,
+    there\u2019s something I need to tell you...<f:Insane><set:Drive=Wrath3> <iload:CarDrive>---\r\n"
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 

@@ -78,9 +78,11 @@ public class DialogueInterpreter : MonoBehaviour
         dialogueCache = dialogue;
         _lineRenderer.enabled = true;
         string[] lines = dialogue.Split($"---");
+        print(lines.Length);
 
         for(_lineIndex = index; _lineIndex < lines.Length; _lineIndex++)
         {
+            print(_lineIndex);
             string line = lines[_lineIndex];
             string preProcessedLine = line.Trim();
             _text.maxVisibleCharacters = 0;
@@ -103,8 +105,16 @@ public class DialogueInterpreter : MonoBehaviour
                     clausController.Talk();
                 }
 
+                float realTimeBetweenChars = timeBetweenChars;
+
+                if(_text.text.Length > 0){
+                    if(_text.text[i] == ' ') realTimeBetweenChars = 0.1f;
+                    else if(_text.text[i] == '.') realTimeBetweenChars = 0.2f;
+                    else if(_text.text[i] == ',') realTimeBetweenChars = 0.15f;
+                }
+
                 if(Input.GetKey(KeyCode.Tab) || _skip) yield return null;
-                else yield return new WaitForSeconds(timeBetweenChars);
+                else yield return new WaitForSeconds(realTimeBetweenChars);
             }
             clausController.StopTalking();
             yield return new WaitWhile(() => _stop);

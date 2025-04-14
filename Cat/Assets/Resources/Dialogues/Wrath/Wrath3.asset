@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wrath3
   m_EditorClassIdentifier: 
   _value: "<c:1><e:0><f:Neutral><event:silence>\xBFTe culpas a ti mismo por cosas
-    fuera de tu control?---\n...---\n<f:Angry>Oye, no me estabas escuchando<event:unSilence>---\n<f:Neutral><c:0>\xBFEst\xE1s
+    fuera de tu control?<w:2>---\n<f:Angry>Oye, no me estabas escuchando<event:unSilence>---\n<f:Neutral><c:0>\xBFEst\xE1s
     bien?---\n<c:0>\xBFSeguro que no quieres parar? <opt:Est\xE1bamos fuera/follow>---\n<c:3>\xBFQu\xE9?
     No hemos parado en ning\xFAn momento---\n<f:Happy>Est\xE1s perdiendo la cabeza
     igual que yo jejejsj---\n<opt:\xBFIgual que t\xFA?/follow>---\n<c:3><f:Confident>Es
@@ -23,3 +23,24 @@ MonoBehaviour:
     algo cansada---\n<c:1>\xBFPodr\xEDamos parar por aqu\xED?---\n<e:1>Necesito tomar
     un poco el aire---\n<opt:\xBFTengo opci\xF3n?/follow>---\n<e:0><c:3>Ehm... Claro,
     no hace falta que paremos<iload:Void><event:silence> si no quieres---"
+  _translationsArray:
+  - "<c:1><e:0><f:Neutral><event:silence>Do you blame yourself for things out of
+    your control?<w:2>---\r\n<f:Angry>Hey, you weren\u2019t listening to me<event:unSilence>---\r\n<f:Neutral><c:0>Are
+    you okay?---\r\n<c:0>Are you sure you don\u2019t want to stop? <opt:We were already
+    outside/follow>---\r\n<c:3>What? We haven\u2019t stopped at any point---\r\n<f:Happy>You\u2019re
+    losing your mind just like I am hehejsj---\r\n<opt:Just like you?/follow>---\r\n<c:3><f:Confident>Just
+    kidding, idiot---\r\n<c:2><f:Happy><w:3>---\r\n<e:1>So then...<w:2>---\r\n<c:3><e:0><f:Neutral>Do
+    you blame yourself for things out of your control?<opt:What do you mean?/follow>---\r\nI
+    think I tend to take the blame for everything bad around me---\r\n<w:3><e:1>---\r\n<c:2><e:0>I\u2019m
+    a bit tired---\r\n<c:1>Could we stop here for a bit?---\r\n<e:1>I need some fresh
+    air---\r\n<opt:Do I have a choice?/follow>---\r\n<e:0><c:3>Uhm... Sure, we don\u2019t
+    have to stop<iload:Void><event:silence> if you don\u2019t want\r\n"
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 

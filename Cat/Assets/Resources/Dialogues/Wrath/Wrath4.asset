@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27939074f0474c2419ef9e4e0de07290, type: 3}
   m_Name: Wrath4
   m_EditorClassIdentifier: 
-  _value: '<channel:0><play:noise>---
-
-    <f:Insane><charTime:0,25>NO...---<charTime:0,035><set:Parade=Bargaining><iload:CarStop>'
+  _value: <f:Insane><channel:0><play:noise>---<charTime:0,25>NO...---<charTime:0,035><set:Parade=Bargaining><iload:CarStop>
+  _translationsArray:
+  - <f:Insane><c:STAND><channel:0><play:noise>---<charTime:0,25>NO...---<charTime:0,035><set:Parade=Bargaining><iload:CarStop>
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 

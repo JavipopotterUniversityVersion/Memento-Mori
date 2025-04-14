@@ -374,6 +374,30 @@ PrefabInstance:
       propertyPath: interpreter
       value: 
       objectReference: {fileID: 218073093}
+    - target: {fileID: 4735579064760359677, guid: d7df3f7487846f9429b4b030f6093ab4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4735579064760359677, guid: d7df3f7487846f9429b4b030f6093ab4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 4735579064760359677, guid: d7df3f7487846f9429b4b030f6093ab4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4735579064760359677, guid: d7df3f7487846f9429b4b030f6093ab4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9936507
+      objectReference: {fileID: 0}
+    - target: {fileID: 4735579064760359677, guid: d7df3f7487846f9429b4b030f6093ab4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.11250952
+      objectReference: {fileID: 0}
+    - target: {fileID: 4735579064760359677, guid: d7df3f7487846f9429b4b030f6093ab4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 12.92
+      objectReference: {fileID: 0}
     - target: {fileID: 8745980051574929515, guid: d7df3f7487846f9429b4b030f6093ab4, type: 3}
       propertyPath: m_Name
       value: Mori

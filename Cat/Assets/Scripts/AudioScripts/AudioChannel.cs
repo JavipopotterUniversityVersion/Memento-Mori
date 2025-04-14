@@ -26,4 +26,7 @@ public class AudioChannel : ScriptableObject
     {
         if(_currentAudio != null) _currentAudio.FadeOut(fadeTime);
     }
+
+    public void Pause() => _currentAudio.Pause();
+    public void Resume() => _currentAudio.Resume();
 }

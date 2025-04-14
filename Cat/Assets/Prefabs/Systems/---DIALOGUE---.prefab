@@ -776,10 +776,10 @@ MonoBehaviour:
       Value:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 11400000, guid: 1029719db1797ac43a9e71cd54b4c821, type: 2}
-            m_TargetAssemblyTypeName: SimpleAudioManagerHandler, Assembly-CSharp
+          - m_Target: {fileID: 11400000, guid: 34e24f760653faa4bb2ca74b0d178c62, type: 2}
+            m_TargetAssemblyTypeName: AudioChannel, Assembly-CSharp
             m_MethodName: Pause
-            m_Mode: 6
+            m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
               m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -804,10 +804,10 @@ MonoBehaviour:
       Value:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 11400000, guid: 1029719db1797ac43a9e71cd54b4c821, type: 2}
-            m_TargetAssemblyTypeName: SimpleAudioManagerHandler, Assembly-CSharp
-            m_MethodName: Pause
-            m_Mode: 6
+          - m_Target: {fileID: 11400000, guid: 34e24f760653faa4bb2ca74b0d178c62, type: 2}
+            m_TargetAssemblyTypeName: AudioChannel, Assembly-CSharp
+            m_MethodName: Resume
+            m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
               m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

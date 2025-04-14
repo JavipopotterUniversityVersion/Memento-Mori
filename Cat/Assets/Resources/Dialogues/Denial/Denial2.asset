@@ -21,3 +21,23 @@ MonoBehaviour:
     como te entrega una carta en la mano<c:STAND><event:takePosition>---\n<channel:0>---\nLo
     siento...<event:open_eyes> <pitch:-1>---\nTe ment\xED...<w:2>---\nGracias por
     todo, de verdad---\nAdi\xF3s<w:2>---\n<c:FALL>---\n<w:3><play:noise>---\n<set:Drive=Wrath><pitch:1><load:carDrive/white>"
+  _translationsArray:
+  - "<channel:1>---\r\nIt\u2019s cold, you feel the soft breeze of the wind---\r\n<channel:0>---\r\n<c:2><f:Neutral>You
+    can't see a single star tonight---\r\n<e:1>What a shame, it would\u2019ve been
+    so romantic...---\r\n<opt:Romantic?/follow><e:0>Uh...---\r\n<c:3><f:Happy>I didn\u2019t
+    say anything, forget it---\r\n<c:0>Actually, I stopped here for another reason...---\r\n<f:Neutral><c:1>It\u2019s
+    not that I wanted to lie to you, really---\r\n<e:1><f:Shame>I was just embarrassed---\r\nThere\u2019s
+    something I need to tell you...---\r\n...---\r\n<w:3>---\r\n<e:0><f:Neutral>Close
+    your eyes, and please don\u2019t open them...---\r\n<event:close_eyes><channel:1>---<play:paper>\r\nYou
+    feel them placing a letter in your hand <c:STAND><event:takePosition>---\r\n<channel:0>---\r\nI\u2019m
+    sorry...<event:open_eyes> <pitch:-1>---\r\nI lied to you...<w:2>---\r\nThank
+    you for everything, really---\r\nGoodbye<w:2>---\r\n<c:FALL>---\r\n<w:3><play:noise>---\r\n<set:Drive=Wrath><pitch:1><load:carDrive/white>\r\n"
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
