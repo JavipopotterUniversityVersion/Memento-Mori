@@ -262,11 +262,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1620262561713076010, guid: 5cccd1ffb841c6641a975e62f5cdaaaa, type: 3}
       propertyPath: XRotationLimit
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1620262561713076010, guid: 5cccd1ffb841c6641a975e62f5cdaaaa, type: 3}
       propertyPath: yRotationLimit
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1980468815002032772, guid: 5cccd1ffb841c6641a975e62f5cdaaaa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -388,16 +388,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4735579064760359677, guid: d7df3f7487846f9429b4b030f6093ab4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9936507
+      value: 0.9958844
       objectReference: {fileID: 0}
     - target: {fileID: 4735579064760359677, guid: d7df3f7487846f9429b4b030f6093ab4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.11250952
+      value: 0.09063256
       objectReference: {fileID: 0}
     - target: {fileID: 4735579064760359677, guid: d7df3f7487846f9429b4b030f6093ab4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 12.92
+      value: 10.4
       objectReference: {fileID: 0}
+    - target: {fileID: 4991874788143137269, guid: d7df3f7487846f9429b4b030f6093ab4, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ecd0d5469f502184eb8507631f9dd94f, type: 2}
     - target: {fileID: 8745980051574929515, guid: d7df3f7487846f9429b4b030f6093ab4, type: 3}
       propertyPath: m_Name
       value: Mori

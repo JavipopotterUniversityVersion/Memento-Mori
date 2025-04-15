@@ -26,7 +26,7 @@ MonoBehaviour:
     evitar cerrar los ojos...---\nSientes como te entrega una carta en la mano<c:stand><event:takePosition><c:6>---\n<channel:0>---\n<f:Neutral>Lo
     siento...<event:open_eyes> <pitch:-1>---\nTe ment\xED...<w:2>---\n<opt:No te
     vayas/follow>---\nYa es muy tarde---\n<e:1>No es algo que puedas negociar---\n<e:0>Gracias
-    por todo...<c:7><set:Drive=Depression>---\n<iload:CarDrive>---"
+    por todo...\n<c:FALL>---\n<set:Drive=Depression>---\n<iload:CarDrive>---"
   _translationsArray:
   - "<setMatColor:pixel/_Filter/yellow><f:Happy><channel:1>---\r\nIt\u2019s cold,
     you feel the soft breeze of the wind---\r\n<channel:0>---\r\n<c:2>It\u2019s cold---\r\n<c:side_eye>I
@@ -43,7 +43,7 @@ MonoBehaviour:
     your hand <c:stand><event:takePosition><c:6>---\r\n<channel:0>---\r\n<f:Neutral>I\u2019m
     sorry...<event:open_eyes> <pitch:-1>---\r\nI lied to you...<w:2>---\r\n<opt:Don\u2019t
     leave/follow>---\r\nIt\u2019s already too late---\r\n<e:1>This isn\u2019t something
-    you can negotiate---\r\n<e:0>Thank you for everything...<c:7><set:Drive=Depression>---\r\n<iload:CarDrive>---\r\n"
+    you can negotiate---\r\n<e:0>Thank you for everything...---\n<c:FALL>---\n<set:Drive=Depression>---\r\n<iload:CarDrive>---\r\n"
   - 
   - 
   - 

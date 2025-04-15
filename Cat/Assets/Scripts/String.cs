@@ -77,16 +77,11 @@ public class StringCustomInspector : Editor
         _currentText = stringObject.GetLanguageValue(_currentLanguage);
     }
 
-    private void OnDisable() {
-        if (target == null) return;
-        String stringObject = target as String;
-        AssignCurrentTextToLanguage(stringObject);
-    }
-
     void AssignCurrentTextToLanguage(String stringObject)
     {
-        if(_currentLanguage == "Spanish") stringObject.SetDefaultValue(_currentText);
-        else stringObject.SetLanguageValue(_currentLanguage, _currentText);
+        if(_currentLanguage == "Spanish") {
+            stringObject.SetDefaultValue(_currentText);
+        } else stringObject.SetLanguageValue(_currentLanguage, _currentText);
 
         EditorUtility.SetDirty(stringObject);
 

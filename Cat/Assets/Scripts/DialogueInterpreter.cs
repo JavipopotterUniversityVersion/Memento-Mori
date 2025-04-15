@@ -78,11 +78,9 @@ public class DialogueInterpreter : MonoBehaviour
         dialogueCache = dialogue;
         _lineRenderer.enabled = true;
         string[] lines = dialogue.Split($"---");
-        print(lines.Length);
 
         for(_lineIndex = index; _lineIndex < lines.Length; _lineIndex++)
         {
-            print(_lineIndex);
             string line = lines[_lineIndex];
             string preProcessedLine = line.Trim();
             _text.maxVisibleCharacters = 0;
@@ -100,17 +98,17 @@ public class DialogueInterpreter : MonoBehaviour
 
                     ReadCommand(value, ref waitTime);
                 }
-                else if(_text.text[i] != ' ' && !Input.GetKey(KeyCode.Tab) && channelIndex == 0){
+                else if(_text.text[i] != ' ' && _text.text[i] != '.' && !Input.GetKey(KeyCode.Tab) && channelIndex == 0){
                     _onCharWritten.Invoke();
                     clausController.Talk();
                 }
 
                 float realTimeBetweenChars = timeBetweenChars;
 
-                if(_text.text.Length > 0){
-                    if(_text.text[i] == ' ') realTimeBetweenChars = 0.1f;
-                    else if(_text.text[i] == '.') realTimeBetweenChars = 0.2f;
-                    else if(_text.text[i] == ',') realTimeBetweenChars = 0.15f;
+                if(_text.maxVisibleCharacters > 0 && _text.maxVisibleCharacters < _text.text.Length){
+                    char currentChar = _text.text[_text.maxVisibleCharacters - 1];
+                    if(currentChar == '.') realTimeBetweenChars = 0.2f;
+                    else if(currentChar == ',') realTimeBetweenChars = 0.15f;
                 }
 
                 if(Input.GetKey(KeyCode.Tab) || _skip) yield return null;
