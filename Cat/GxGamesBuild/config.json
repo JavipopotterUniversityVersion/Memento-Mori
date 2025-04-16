@@ -1,0 +1,20 @@
+{
+  "runOptions": {
+    "dataUrl": "Build/GxGamesBuild.data",
+    "frameworkUrl": "Build/GxGamesBuild.framework.js",
+    "codeUrl": "Build/GxGamesBuild.wasm",
+    "streamingAssetsUrl": "StreamingAssets",
+    "companyName": "DefaultCompany",
+    "productName": "Cat",
+    "productVersion": "0.1.0"
+  },
+  "pageData": {
+    "backgroundColor": "#231F20",
+    "backgroundFilename": "",
+    "height": "600",
+    "loaderFilename": "GxGamesBuild.loader.js",
+    "productName": "Cat",
+    "productVersion": "0.1.0",
+    "width": "960"
+  }
+}
